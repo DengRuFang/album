@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員資料</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/member.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="shortcut icon" href="./assets/img/maskback.png" />
+</head>
+
+<body id="body">
+    <header>
+        <a href="index.html">
+            <div class="r-header-titlebox">
+                <div class="r-header-title">
+                    <img src="./assets/img/logo.png">
+                </div>
+                <div class="r-header-title2">
+                    <img src="./assets/img/logo2.png">
+                </div>
+            </div>
+        </a>
+        <nav class="r-header-nav">
+            <a href="./All Products.html">
+                <div class="r-h-n-text-content">
+                    所有產品
+                </div>
+            </a>
+            <a href="./detail.html">
+                <div class="r-h-n-text-content">
+                    細項分類
+                </div>
+            </a>
+            <a href="./member.html">
+                <div class="r-h-n-text-content">
+                    會員資料
+                </div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="r-h-n-text-content">
+                    關於我們
+                </div>
+            </a>
+            <a href="./question.html">
+                <div class="r-h-n-text-content">
+                    常見問題
+                </div>
+            </a>
+        </nav>
+        <form action="./search.html" method="post">
+            <div class="r-header-search">
+                <input type="search" class="searchtext" placeholder="搜尋">
+                <a class="r-h-search-imgbtn" href="#"><button class="searchbtn"><img src="./assets/img/search.png"
+                            class="searchpic"></button></a>
+            </div>
+        </form>
+        <div class="r-header-smallpic">
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/userpic.png" id="user">
+            </div>
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/signout.png" id="signout">
+            </div>
+            <a href="./car.html">
+                <div class="r-h-smallpic-memcart">
+                    <img src="./assets/img/cartpic.png">
+                </div>
+            </a>
+        </div>
+        <div class="outside" id="outside"></div>
+        <form action="" method="post">
+            <div class="login-form" id="loginform">
+                <img src="./assets/img/cancel.png" class="x" id="x">
+                <div class="login" id="login">
+                    <div class="loginback">
+                        <div class="login-text">
+                            登入
+                        </div>
+                        <div class="logininput">
+                            <div class="acount">
+                                帳號：<input type="text" class="input">
+                            </div>
+                            <div class="password">
+                                密碼：<input type="text" class="input">
+                            </div>
+                            <button class="loginbtn" id="loginbtn">登入</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <form action="">
+            <div class="signup" id="signup">
+                <div class="loginback">
+                    <div class="signtext">
+                        快來加入我們~！！
+                    </div>
+                    <div class="login-text">
+                        註冊
+                    </div>
+                    <div class="signinput">
+                        <div class="acount">
+                            帳號：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            密碼：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            E-mail：<input type="email" class="input" style="width: 210px;">
+                        </div>
+                        <button class="loginbtn" id="signbtn">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="mask" id="mask2">
+            <div id="maskbtn">沒有帳號，要註冊</div>
+        </div>
+    </header>
+    <div class="all">
+        <div class="member-bbox">
+            <div class="member-bph">
+                <div class="member-ph">
+                    <img src="./assets/img/bighead3.png">
+                </div>
+                <div class="all-btn">
+                    <div id="member-btn">
+                        <button class="inbtn-1" onclick="inbtn();">消費紀錄</button>
+                    </div>
+
+                    <div id="inbtn">
+                        <div class="close">
+                            <a href="javascript:void(0)" onclick="closePop()">消費紀錄 ✖️</a>
+                        </div>
+                        <div class="inbtn-buy">
+                            <div class="inbtn-buy-ph">
+                                <img src="./assets/img/bts2.jpg">
+                            </div>
+                            <div class="inbtn-buy-word">
+                                <p>訂購品項：BTS-Butter<br>
+                                    訂購日期：2022/06/01<br>訂購數量:5張<br>訂購總金額:3900</p>
+                            </div>
+                        </div>
+                        <div class="inbtn-buy">
+                            <div class="inbtn-buy-ph">
+                                <img src="./assets/img/shawn1.jpg">
+                            </div>
+                            <div class="inbtn-buy-word">
+                                <p>訂購品項：Shawn Mendes-When You're Gone<br>
+                                    訂購日期：2022/06/05<br>訂購數量:2張<br>訂購總金額:1080</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="member-btn2">
+                        <button class="inbtn-2" onclick="inbtn2();">評論紀錄</button>
+                    </div>
+
+                    <div id="inbtn2">
+                        <div class="close">
+                            <a href="javascript:void(0)" onclick="closePop2()">評論紀錄 ✖️</a>
+                        </div>
+                        <div class="inbtn-comment">
+                            <div class="inbtn2-comment">
+                                <img src="./assets/img/bighead3.png">
+                            </div>
+                            <div class="inbtn2-comment-word">
+                                <p>訂購品項：BTS-Butter<br>評分星等:<span
+                                        class="full_star2">★★★★★</span><br>評語:好聽好聽!!這張專輯真是物超所值!好喜歡!</p>
+                            </div>
+                        </div>
+                        <div class="inbtn-comment">
+                            <div class="inbtn2-comment">
+                                <img src="./assets/img/bighead3.png">
+                            </div>
+                            <div class="inbtn2-comment-word">
+                                <p>訂購品項：Shawn Mendes-When You're Gone<br>評分星等:<span
+                                        class="full_star2">★★★★★</span><br>評語:好聽好聽!!這張專輯真是物超所值!好喜歡!</p>
+                            </div>
+                        </div>
+                        <div class="inbtn-comment">
+                            <div class="inbtn2-comment">
+                                <img src="./assets/img/bighead3.png">
+                            </div>
+                            <div class="inbtn2-comment-word">
+                                <p>訂購品項：SEVEVTEEN-Al1<br>評分星等:<span
+                                        class="full_star2">★★★★★</span><br>評語:好聽好聽!!這張專輯真是物超所值!好喜歡!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-data">
+
+                <div class="member-data-in">
+                    <div class="member-data-row">
+                        <div class="member-data-name1">
+                            <p>姓名: 謝庭芝</p>
+                        </div>
+                    </div>
+                    <div class="member-data-row">
+                        <div class="member-data-inrow">
+                            <p>電話:0912345678</p>
+                        </div>
+                    </div>
+                    <div class="member-data-row">
+                        <div class="member-data-inrow">
+                            <p>地址:桃園市大園區埔心里</p>
+                        </div>
+                    </div>
+                    <div class="member-data-row">
+                        <div class="member-data-inrow">
+                            <p>信箱:a123@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="member-data-row">
+                        <div class="member-data-inrow">
+                            <p>生日:2002/04/13</p>
+                        </div>
+                    </div>
+                    <div id="member-btn3">
+                        <button class="inbtn-3" onclick="inbtn3();">修改資料</button>
+                    </div>
+                </div>
+                <form action="member.html">
+                    <div id="inbtn3">
+                        <div class="close">
+                            <a href="javascript:void(0)" onclick="closePop3()">關閉 ✖️</a>
+                        </div>
+                        <div class="member-sbox">
+                            <div class="member-sph">
+                                <div class="member-chph">
+                                    <img src="./assets/img/bighead3.png">
+                                </div>
+                                <div class="member-chbtn">
+                                    <button type="submit" class="member-in-chbtn" id="btn1">修改完成</button>
+                                    <button type="reset" class="member-in-chbtn" id="reset1">重新填寫</button>
+                                </div>
+                            </div>
+                            <div class="member-change">
+                                <div class="member-chdata-in">
+                                    <div class="member-chdata-row">
+                                        <div class="member-chdata-name1">
+                                            <p>姓名:</p>
+                                            <input type="text" placeholder="請輸入你的名字" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="member-chdata-row">
+                                        <div class="member-chdata-inrow">
+                                            <p>電話:</p>
+                                            <input type="text" placeholder="請輸入你的電話" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="member-chdata-row">
+                                        <div class="member-chdata-inrow">
+                                            <p>地址:</p>
+                                            <input type="text" placeholder="請輸入你的地址" id="address">
+                                        </div>
+                                    </div>
+                                    <div class="member-chdata-row">
+                                        <div class="member-chdata-inrow">
+                                            <p>信箱:</p>
+                                            <input type="text" placeholder="請輸入你的信箱" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="member-chdata-row">
+                                        <div class="member-chdata-inrow">
+                                            <p>生日:</p>
+                                            <input type="text" placeholder="西元出生年月日(ex:20020413)" id="bth">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+<footer class="footer">
+    <div class="footer-contactus">
+        |聯絡我們|<br><br>
+        電話：0966-666-666<br>
+        E-mail：many@gmail.com
+    </div>
+    <div class="footer-count">
+        <br>
+        <p>進入網站人數：　人</p>
+        <br>
+        <p>版權所有© 2022 鄧如芳 謝庭芝 陳奕璇 曾羿慈</p>
+    </div>
+    <div class="footer-our">
+        |服務時間|<br><br>
+        星期一至星期五<br>
+        上午8：30~ 12：30;下午1：30~ 5：30
+    </div>
+</footer>
+<script src="./assets/js/member.js"></script>
+<script src="./assets/js/login.js"></script>
+
+</html>

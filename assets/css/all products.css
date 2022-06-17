@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "華康棒棒體W5";
+}
+
+body {
+    /*background-image: url(../img/1.jpg);*/
+    background-image: url(../img/3.jpg);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1903px;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+
+a {
+    border: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+/*字型----------------------*/
+@font-face{
+    font-family: '華康棒棒體W5';
+    src: url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.woff') format("woff"),
+        url('../font/DFBnagBang-W5-WIN-BF-01.ttf') format("truetype"),
+        url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
+}
+
+/*header*/
+header {
+    margin-top: 5px;
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+}
+
+.r-header-titlebox {
+    width: 250px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.r-header-title {
+    padding: 10px;
+    width: 100%;
+}
+
+.r-header-title>img {
+    width: 100%;
+}
+
+.r-header-title2 {
+    position: absolute;
+    top: 35px;
+    left: 58px;
+    width: 250px;
+    opacity: 0;
+}
+
+.r-header-titlebox:hover>.r-header-title2 {
+    opacity: 1;
+}
+
+.r-header-titlebox:hover>.r-header-title {
+    opacity: 0;
+}
+
+.r-header-title2>img {
+    width: 100%;
+}
+
+/*選單*/
+.r-header-nav {
+    width: 900px;
+    margin: 10px;
+    display: flex;
+    margin-left: 180px;
+}
+
+.r-h-n-text-content {
+    font-size: 24px;
+    margin: 33px;
+    transform: scale(1, 1.05);
+}
+
+.r-h-n-text-content:hover {
+    width: 100px;
+    height: 33px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #63a5a5;
+    padding-top: 3px;
+    transform: scale(1, 1.05);
+}
+
+/*搜尋*/
+.r-header-search {
+    height: 40px;
+    width: 200px;
+    margin-top: 55px;
+    margin-left: 60px;
+    position: absolute;
+    left: 1320px;
+    z-index: 1;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+.r-header-search>.searchtext {
+    border-radius: 10px;
+    background-color: #ebe0d9;
+    border: rgb(155, 155, 155) 1px solid;
+    outline: none;
+    width: 150px;
+    font-size: 15px;
+}
+
+.searchpic {
+    width: 80%;
+    height: 100%;
+}
+
+.searchbtn {
+    border: none;
+    background-color: #f0e2d700;
+    cursor: pointer;
+}
+
+/*購物車跟會員*/
+.r-header-smallpic {
+    width: 180px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 70px;
+    cursor: pointer;
+    position: absolute;
+    left: 1430px;
+    z-index: 1;
+}
+
+.r-h-smallpic-memcart {
+    width: 40px;
+    height: 40px;
+    margin: 33px 0px;
+    margin-right: 20px;
+}
+
+.r-h-smallpic-memcart>img {
+    width: 100%;
+    height: 100%;
+}
+
+.all {
+    width: 1900px;
+    height: auto;
+    margin: auto;
+    padding: 50px 0px 0px 40px;
+}
+
+.allP-midbox1 {
+    border-radius: 10PX;
+    width: 1800px;
+    height: 750px;
+    display: flex;
+    text-align: center;
+    /*margin-bottom: 30px;*/
+    position: relative;
+}
+
+.warpper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    margin-top: -80px;
+
+}
+
+.allP-midbox1 .warpper img {
+    width: 350px;
+    height: auto;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 8px;
+    transition: all 0.8s ease-in-out;
+}
+
+.newword {
+    width: auto;
+    height: 80px;
+    position: relative;
+    top: 630px;
+    left: 560px;
+    font-size: 40px;
+
+}
+
+.newword>h1 {
+    background-color: #f73949;
+    border-radius: 10PX;
+    padding-top: 5px;
+    text-align: center;
+}
+
+/*-----------------------國家類別-----------------*/
+.country {
+    background-image: url("../img/korea.jpg");
+    border-radius: 10PX;
+    width: 1800px;
+    height: 350px;
+    margin-top: 30px;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.country-name1 {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.561);
+    /* Black w/opacity/see-through */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 1130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.country2 {
+    background-image: url("../img/europe.jpg");
+    border-radius: 10PX;
+    width: 1800px;
+    height: 350px;
+    display: flex;
+    margin-top: 30px;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.country-name2 {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.657);
+    /* Black w/opacity/see-through */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 2410px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.country3 {
+    background-image: url("../img/taiwan.jpg");
+    border-radius: 10PX;
+    width: 1800px;
+    height: 350px;
+    display: flex;
+    margin-top: 30px;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.country-name3 {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.657);
+    /* Black w/opacity/see-through */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 3690px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/*歌手大框框*/
+.a11-midbox {
+    /*background-color: #aab8abb2;*/
+    background-color: rgba(236, 227, 203, 0.521);
+    border-radius: 10PX;
+    width: 1800px;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.k-midbox {
+    width: 1800px;
+    height: 570px;
+    display: flex;
+
+}
+
+.albumbox-1 {
+    background-color: #42403fca;
+    border-radius: 250px;
+    width: 450px;
+    height: 450px;
+    margin-left: 110px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.k-singer {
+    width: 450px;
+    height: auto;
+    border-radius: 250px;
+    box-shadow: 20px 20px 40px rgb(0, 0, 0);
+}
+
+.albumbox-1:hover .k-singer {
+
+    opacity: 0.3;
+}
+
+.albumbox-1:hover .middle {
+    opacity: 1;
+
+}
+
+.k-midbox-1 {
+    width: 1800px;
+    height: 300px;
+    display: flex;
+}
+
+.albumbox-2 {
+    background-color: #42403fca;
+    width: 260px;
+    height: 260px;
+    margin-left: 33px;
+    border-radius: 250px;
+    position: relative;
+}
+
+.k-singer2 {
+    width: 260px;
+    height: auto;
+    border-radius: 250px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+
+.albumbox-2:hover .k-singer2 {
+    opacity: 0.3;
+}
+
+.albumbox-2:hover .middle {
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text1 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    width: 450px;
+    padding-bottom: 30px;
+    /*padding: 16px ;*/
+}
+
+.text2 {
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    width: 260px;
+    padding-bottom: 20px;
+    /*padding: 16px ;*/
+}
+
+/*footer*/
+.footer {
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+    font-size: larger;
+}
+
+.footer-contactus {
+    width: 250px;
+    margin: 7px 20px
+}
+
+.footer-count {
+    width: 500px;
+    margin: 5px;
+    margin-left: 510px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+.footer-our {
+    width: 400px;
+    margin: 7px 20px;
+}
+
+.footer-our>p {
+    text-align: center;
+}

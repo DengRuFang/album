@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增商品</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/back.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="shortcut icon" href="./assets/img/maskback.png"/>
+</head>
+<body id="body">
+        <header>
+        <a href="index.html">
+            <div class="r-header-titlebox">
+                <div class="r-header-title">
+                    <img src="./assets/img/logo.png">
+                </div>
+                <div class="r-header-title2">
+                    <img src="./assets/img/logo2.png">
+                </div>
+            </div>
+        </a>
+        <nav class="r-header-nav">
+            <a href="./All Products.html">
+                <div class="r-h-n-text-content">
+                    所有產品
+                </div>
+            </a>
+            <a href="./detail.html">
+                <div class="r-h-n-text-content">
+                    細項分類
+                </div>
+            </a>
+            <a href="./member.html">
+                <div class="r-h-n-text-content">
+                    會員資料
+                </div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="r-h-n-text-content">
+                    關於我們
+                </div>
+            </a>
+            <a href="./question.html">
+                <div class="r-h-n-text-content">
+                    常見問題
+                </div>
+            </a>
+        </nav>
+        <form action="./search.html" method="post">
+            <div class="r-header-search">
+                <input type="search" class="searchtext" placeholder="搜尋">
+                <a class="r-h-search-imgbtn" href="#"><button class="searchbtn"><img src="./assets/img/search.png" class="searchpic"></button></a>
+            </div>
+        </form>
+        <div class="r-header-smallpic">
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/userpic.png" id="user">
+            </div>
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/signout.png" id="signout">
+            </div>
+            <a href="./car.html">
+                <div class="r-h-smallpic-memcart">
+                    <img src="./assets/img/cartpic.png">
+                </div>
+            </a>
+        </div>
+        <div class="outside" id="outside"></div>
+        <form action="" method="post">
+            <div class="login-form" id="loginform">
+                <img src="./assets/img/cancel.png" class="x" id="x">
+                <div class="login" id="login">
+                    <div class="loginback">
+                        <div class="login-text">
+                            登入
+                        </div>
+                        <div class="logininput">
+                            <div class="acount">
+                                帳號：<input type="text" class="input">
+                            </div>
+                            <div class="password">
+                                密碼：<input type="text" class="input">
+                            </div>
+                            <button class="loginbtn" id="loginbtn">登入</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <form action="">
+            <div class="signup" id="signup">
+                <div class="loginback">
+                    <div class="signtext">
+                        快來加入我們~！！
+                    </div>
+                    <div class="login-text">
+                        註冊
+                    </div>
+                    <div class="signinput">
+                        <div class="acount">
+                            帳號：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            密碼：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            E-mail：<input type="email" class="input" style="width: 210px;">
+                        </div>
+                        <button class="loginbtn" id="signbtn">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="mask" id="mask2">
+            <div id="maskbtn">沒有帳號，要註冊</div>
+        </div>
+    </header>
+    <div class="all">
+        <div class="nproducts-bbox">
+            <div class="nproducts-mbox">
+                <div class="nproducts-option1">
+                    <p>產品編號：</p>
+                    <input type="text" id="nproducts-num1">
+                </div>
+                <div class="nproducts-option1">
+                    <p>商品名稱：</p>
+                    <input type="text"  id="nproducts-name">
+                </div>
+                <div class="nproducts-option2">
+                    <p>商品價格：</p>
+                    <input type="text"  id="nproducts-price">
+                </div>
+                <div class="nproducts-option3">
+                    <p>商品庫存：</p>
+                    <input type="text"  id="nproducts-num2">
+                </div>
+                <button type="submit" class="nproducts-Btn" id="nproductsbtn">確定 </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/login.js"></script>
+<footer class="footer">
+    <div class="footer-contactus">
+        |聯絡我們|<br><br>
+        電話：0966-666-666<br>
+        E-mail：many@gmail.com
+    </div>
+    <div class="footer-count">
+        <br>
+        <p>進入網站人數：　人</p>
+        <br>
+        <p>版權所有© 2022 鄧如芳 謝庭芝 陳奕璇 曾羿慈</p>
+    </div>
+    <div class="footer-our">
+        |服務時間|<br><br>
+        星期一至星期五<br>
+        上午8：30~ 12：30;下午1：30~ 5：30
+    </div>
+</footer>
+</html>

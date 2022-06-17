@@ -1,0 +1,232 @@
+body {
+    background-color: lightyellow;
+    background-image: url(../img/recordpalyer.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 華康棒棒體W5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/*header*/
+header {
+    margin-top: 25px;
+    height: 100px;
+    display: flex;
+}
+
+/*字型----------------------*/
+@font-face{
+    font-family: '華康棒棒體W5';
+    src: url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.woff') format("woff"),
+        url('../font/DFBnagBang-W5-WIN-BF-01.ttf') format("truetype"),
+        url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
+}
+
+.r-header-titlebox {
+    width: 250px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.r-header-title {
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.r-header-title>img {
+    width: 100%;
+}
+
+.r-header-title2 {
+    position: absolute;
+    top: 35px;
+    left: 58px;
+    width: 250px;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.r-header-titlebox:hover>.r-header-title2 {
+    opacity: 1;
+}
+
+.r-header-titlebox:hover>.r-header-title {
+    opacity: 0;
+}
+
+.r-header-title2>img {
+    width: 100%;
+}
+
+/*選單*/
+.r-header-nav {
+    width: 900px;
+    margin: 10px;
+    display: flex;
+    margin-left: 180px;
+}
+
+.r-h-n-text-content {
+    font-size: 24px;
+    margin: 33px;
+    transform: scale(1, 1.05);
+    color: rgba(255, 255, 255, 0.507);
+}
+
+.r-h-n-text-content:hover {
+    width: 100px;
+    height: 33px;
+    border-radius: 10px;
+    color: #ffffff;
+    padding-top: 3px;
+    transform: scale(1, 1.05);
+    cursor: pointer;
+}
+
+/*搜尋*/
+.r-header-search {
+    height: 40px;
+    width: 200px;
+    margin-top: 55px;
+    margin-left: 60px;
+    position: absolute;
+    left: 1320px;
+    z-index: 1;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+.r-header-search>.searchtext {
+    border-radius: 10px;
+    background-color: #ebe0d900;
+    border: rgb(155, 155, 155) 1px solid;
+    color: white;
+    outline: none;
+    width: 150px;
+    font-size: 15px;
+}
+
+.searchpic {
+    width: 100%;
+    height: 100%;
+}
+
+.searchbtn {
+    border: none;
+    background-color: #f0e2d700;
+    cursor: pointer;
+}
+
+/*購物車跟會員*/
+.r-header-smallpic {
+    width: 180px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 70px;
+    cursor: pointer;
+    position: absolute;
+    left: 1430px;
+    z-index: 1;
+}
+
+.r-h-smallpic-memcart {
+    width: 40px;
+    height: 40px;
+    margin: 33px 0px;
+    margin-right: 20px;
+}
+
+.r-h-smallpic-memcart>img {
+    width: 100%;
+    height: 100%;
+}
+
+/*內容----------------------------------------------------------*/
+main {
+    height: 550px;
+    width: 100%;
+}
+
+/*左邊標語*/
+main {
+    padding-top: 150px;
+}
+
+.content {
+    margin-top: 40px;
+    height: 400px;
+    width: 800px;
+    color: rgba(255, 255, 255, 0.932);
+    font-size: 50px;
+    font-style: italic;
+    margin-left: 200px;
+    border-radius: 50px;
+    line-height: 100px;
+    -webkit-animation: fade-in-bottom 3s infinite;
+    animation: fade-in-bottom 3s infinite;
+}
+
+@-webkit-keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*footer*/
+.footer {
+    height: 100px;
+    color: rgba(255, 255, 255, 0.226);
+    display: flex;
+    font-size: larger;
+}
+
+.footer-contactus {
+    width: 250px;
+    margin: 7px 20px
+}
+
+.footer-count {
+    width: 500px;
+    margin: 5px;
+    margin-top: 60px;
+    margin-left: 510px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+.footer-our {
+    width: 400px;
+    margin: 7px 20px;
+}
+
+.footer-our>p {
+    text-align: center;
+}

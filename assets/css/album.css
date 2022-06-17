@@ -1,0 +1,742 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "華康棒棒體W5";
+}
+
+body {
+    /*background-image: url(../img/1.jpg);*/
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1903px;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+
+/*字型----------------------*/
+@font-face{
+    font-family: '華康棒棒體W5';
+    src: url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.woff') format("woff"),
+        url('../font/DFBnagBang-W5-WIN-BF-01.ttf') format("truetype"),
+        url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
+}
+
+/*header*/
+header {
+    margin-top: 5px;
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+}
+
+.r-header-titlebox {
+    width: 250px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.r-header-title {
+    padding: 10px;
+    width: 100%;
+}
+
+.r-header-title>img {
+    width: 100%;
+}
+
+.r-header-title2 {
+    position: absolute;
+    top: 35px;
+    left: 58px;
+    width: 250px;
+    opacity: 0;
+}
+
+.r-header-titlebox:hover>.r-header-title2 {
+    opacity: 1;
+}
+
+.r-header-titlebox:hover>.r-header-title {
+    opacity: 0;
+}
+
+.r-header-title2>img {
+    width: 100%;
+}
+
+/*選單*/
+.r-header-nav {
+    width: 900px;
+    margin: 10px;
+    display: flex;
+    margin-left: 180px;
+}
+
+.r-h-n-text-content {
+    font-size: 24px;
+    margin: 33px;
+    transform: scale(1, 1.05);
+}
+
+.r-h-n-text-content:hover {
+    width: 100px;
+    height: 33px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #63a5a5;
+    padding-top: 3px;
+    transform: scale(1, 1.05);
+}
+
+/*搜尋*/
+.r-header-search {
+    height: 40px;
+    width: 200px;
+    margin-top: 55px;
+    margin-left: 60px;
+    position: absolute;
+    left: 1320px;
+    z-index: 1;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+.r-header-search>.searchtext {
+    border-radius: 10px;
+    background-color: #ebe0d9;
+    border: rgb(155, 155, 155) 1px solid;
+    outline: none;
+    width: 150px;
+    font-size: 15px;
+}
+
+.searchpic {
+    width: 80%;
+    height: 100%;
+}
+
+.searchbtn {
+    border: none;
+    background-color: #f0e2d700;
+    cursor: pointer;
+}
+
+/*購物車跟會員*/
+.r-header-smallpic {
+    width: 180px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 70px;
+    cursor: pointer;
+    position: absolute;
+    left: 1430px;
+    z-index: 1;
+}
+
+.r-h-smallpic-memcart {
+    width: 40px;
+    height: 40px;
+    margin: 33px 0px;
+    margin-right: 20px;
+}
+
+.r-h-smallpic-memcart>img {
+    width: 100%;
+    height: 100%;
+}
+
+.all {
+    width: 1900px;
+    height: auto;
+    margin: auto;
+    padding: 50px 0px 0px 40px;
+}
+
+/*footer*/
+.footer {
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+    font-size: larger;
+}
+
+.footer-contactus {
+    width: 250px;
+    margin: 7px 20px
+}
+
+.footer-count {
+    width: 500px;
+    margin: 5px;
+    margin-left: 510px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+.footer-our {
+    width: 400px;
+    margin: 7px 20px;
+}
+
+.footer-our>p {
+    text-align: center;
+}
+
+.album-bbox {
+    background-color: rgba(236, 227, 203, 0.65);
+    border-radius: 10PX;
+    width: 1800px;
+    height: 680px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#box {
+    background-color: #ffffff;
+    width: 500px;
+    height: 500px;
+    margin-top: 90px;
+    margin-left: 70px;
+    display: block;
+}
+
+#small {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    float: left;
+    box-shadow: 20px 20px 40px rgb(0, 0, 0);
+}
+
+#small>img {
+    height: 100%;
+    width: 100%;
+}
+
+#mask {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(214, 111, 193, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#big {
+    width: 230px;
+    height: 230px;
+    border: 1px solid rgb(114, 112, 112);
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    top: 240px;
+    left: 520px;
+    display: none;
+}
+
+
+
+.album-ind {
+    background-color: #dfdcd5f3;
+    border-radius: 10px;
+    width: 1100px;
+    height: 550px;
+    display: block;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.album-name {
+    background-color: #E6C786;
+    /*rgb(137, 172, 200);*/
+    width: 1100px;
+    height: 70px;
+}
+
+.album-name>h2 {
+    font-size: 50px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.album-star {
+    width: 450px;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    border-radius: 10px;
+}
+
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ddd;
+    /*背景星星顏色*/
+    overflow: hidden;
+    font-size: 40px;
+    /*調整字體大小可放大縮小星星*/
+    text-shadow: 0px 1px 0 rgb(246, 228, 60);
+    margin: auto;
+}
+
+.full_star {
+    width: 100%;
+    /*調整寬度可變更星等*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(255, 232, 60);
+    /*前景星星顏色*/
+}
+
+.album-star>h2 {
+    font-size: 40px;
+    padding-top: 5px;
+
+}
+
+.quanty {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.quanty>p {
+    font-size: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#min {
+    background-color: #c7a9a1b4;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 250px;
+    border: none;
+    cursor: pointer;
+}
+
+#num {
+    font-size: 25px;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+}
+
+#add {
+    background-color: #c7a9a1b4;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    border-radius: 250px;
+    cursor: pointer;
+}
+
+.quanty>h2 {
+    font-size: 35px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-left: 70px;
+    padding-top: 5px;
+    background-color: #c7a9a1b4;
+}
+
+.quanty>h3 {
+    padding-top: 35px;
+    position: relative;
+    left: 5px;
+    color: rgb(54, 54, 54);
+}
+
+.album-indtitle>h2 {
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.ind {
+    background-color: #ceaf7de5;
+    /*rgba(159, 211, 203, 0.993);#D4C3AA*/
+    width: 1000px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.ind>p {
+    font-size: 27px;
+    line-height: 30pt;
+}
+
+.coment {
+    background-color: #c7a9a181;
+    border-radius: 10PX;
+    width: 1800px;
+    height: 760px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.coment-star {
+    background-color: #ffffff;
+    float: right;
+    width: 650px;
+    height: 480px;
+    margin-top: 20px;
+    margin-left: 170px;
+
+}
+
+.coment-review {
+    background-color: #ffffff;
+    float: right;
+    width: 650px;
+    height: 480px;
+    margin-top: 20px;
+    margin-left: 170px;
+}
+
+.like {
+    background-color: #ebe0d9;
+    border-radius: 10PX;
+    width: 1800px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.like-4 {
+    background-color: rgba(236, 227, 203, 0.507);
+    border-radius: 10PX;
+    width: 1800px;
+    height: 600px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.like-4-album {
+    width: 1800px;
+    height: 450;
+    display: flex;
+}
+
+.album-like {
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 40px;
+
+
+}
+
+.album-like>img {
+    width: 400px;
+    height: auto;
+}
+
+.coment-in1 {
+    background-color: #63a5a5;
+    width: 650px;
+    height: 500px;
+    margin-left: 170px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+.coment-in2 {
+    background-color: #63a5a5;
+    width: 650px;
+    height: 500px;
+    margin-left: 150px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+.coment-in1>h2 {
+    font-size: 40px;
+    margin: 10px 0 0 10px;
+}
+
+.coment-in1 input[type="text"] {
+    display: block;
+    width: 600px;
+    height: 50px;
+    margin: 10px 0px 10px 10px;
+    border-radius: 10px;
+    font-size: 25px;
+
+}
+
+/*星星可增加減少*/
+
+.star {
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+    width: 300px;
+    margin: auto;
+}
+
+.star input {
+    display: block;
+    float: left;
+    margin: 10px 0 0 15px;
+    padding: 0;
+    width: 1em;
+    height: 1em;
+    font: inherit;
+    background: center 0/cover no-repeat;
+    outline: 0 none transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.star input:first-child {
+    display: none;
+}
+
+.star input:checked~input {
+    background-position: center -1em;
+}
+
+.star:hover input:checked~input {
+    background-position: center 0;
+}
+
+.star:hover input:hover~input {
+    background-position: center -1em;
+}
+
+.star input:checked+label {
+    display: block;
+}
+
+.star:hover input:checked+label {
+    display: none;
+}
+
+.star:hover input:hover+label {
+    display: block;
+}
+
+.star-once input:first-child:not(:checked)~input {
+    background-position: center 0;
+    pointer-events: none;
+}
+
+.star-once input:not(:first-child):checked~input {
+    background-position: center -1em;
+}
+
+.star-once input:first-child:not(:checked)~label {
+    display: none;
+}
+
+.star-once input:not(:first-child):checked+label {
+    display: block;
+}
+
+.star-lock {
+    pointer-events: none;
+}
+
+.star {
+    font-size: 40px;
+}
+
+.star input {
+    background-image: url("../img/star.png");
+}
+
+
+
+.coment-write {
+    width: 600px;
+    height: 290px;
+    margin-top: 25px;
+    margin-left: 23px;
+    display: block;
+
+}
+
+.coment-in1,
+.coment-in2 {
+    background-color: #67b9b9;
+}
+
+textarea {
+    background-color: #ffed9f;
+    width: 600px;
+    font-size: 25px;
+    height: 360px;
+    padding: 5px 0 0 5px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+}
+
+.commemt-Btn {
+    background-color: #63a5a5;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 130px;
+    margin-right: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+
+.commemt-Btn:hover {
+    background-color: #ffffff;
+    color: rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+.coment-in2>h1 {
+    font-size: 40px;
+    padding: 20px 0 0 10px;
+}
+.coment-in2>h2 {
+    font-size: 40px;
+    padding: 5px 0 0 10px;
+
+}
+
+.co1-coment-review {
+    background-color: #ffed9f;
+    width: 600px;
+    height: 400px;
+    margin: 10px 0 0 25px;
+    border-radius: 10px;
+    font-size: 18pt;
+}
+.co1-coment-review>h2{
+    font-size: 25px;
+    padding: 5px 0 0 10px;
+}
+
+.coment-title {
+    background-color: antiquewhite;
+    border-radius: 10PX;
+    width: 1800px;
+    height: 100px;
+}
+
+.coment-title>h1 {
+    font-size: 60px;
+    padding: 15px 0 0 10px;
+}
+
+.like>h1 {
+    font-size: 70px;
+    padding: 15px 0 0 10px;
+}
+
+.car-Btn {
+    background-color: #c7a9a1ec;
+    color: rgb(5, 5, 5);
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    height: 60px;
+    margin-top: 3px;
+    margin-left: 60px;
+    font-size: 30px;
+    border-radius: 250px;
+}
+
+.car-Btn:hover {
+    background-color: #63a5a5;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.like-4-album {
+    height: 600px;
+    position: relative;
+    top: -15px;
+}
+
+.album-like {
+    height: 530px;
+    padding-top: 30px;
+}
+
+.album-like>h1 {
+    width: 30px;
+    color: rgba(0, 0, 0, 0.664);
+    position: relative;
+    top: -418px;
+    left: 5px;
+}
+
+.album-img {
+    margin: auto;
+    margin-top: 10px;
+    height: 380px;
+    width: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px rgba(37, 37, 37, 0.747);
+}
+
+.album-like:hover {
+    background-color: #ebe0d94d;
+}
+
+.album-like:hover>h1 {
+    color: #ddd;
+}
+
+.album-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.album-text-back {
+    width: 380px;
+    background-color: #ddd;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    top: -20px;
+    left: 5px;
+    font-size: 30px;
+}
+
+.album-text-back-text {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

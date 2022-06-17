@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "華康棒棒體W5";
+}
+
+body {
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1903px;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+
+/*header*/
+header {
+    margin-top: 5px;
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+}
+
+/*字型----------------------*/
+@font-face{
+    font-family: '華康棒棒體W5';
+    src: url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.woff') format("woff"),
+        url('../font/DFBnagBang-W5-WIN-BF-01.ttf') format("truetype"),
+        url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
+}
+
+.r-header-titlebox {
+    width: 250px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.r-header-title {
+    padding: 10px;
+    width: 100%;
+}
+
+.r-header-title>img {
+    width: 100%;
+}
+
+.r-header-title2 {
+    position: absolute;
+    top: 35px;
+    left: 58px;
+    width: 250px;
+    opacity: 0;
+}
+
+.r-header-titlebox:hover>.r-header-title2 {
+    opacity: 1;
+}
+
+.r-header-titlebox:hover>.r-header-title {
+    opacity: 0;
+}
+
+.r-header-title2>img {
+    width: 100%;
+}
+
+/*選單*/
+.r-header-nav {
+    width: 900px;
+    margin: 10px;
+    display: flex;
+    margin-left: 180px;
+}
+
+.r-h-n-text-content {
+    font-size: 24px;
+    margin: 33px;
+    transform: scale(1, 1.05);
+}
+
+.r-h-n-text-content:hover {
+    width: 100px;
+    height: 33px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #63a5a5;
+    padding-top: 3px;
+    transform: scale(1, 1.05);
+}
+
+/*搜尋*/
+.r-header-search {
+    height: 40px;
+    width: 200px;
+    margin-top: 55px;
+    margin-left: 60px;
+    position: absolute;
+    left: 1320px;
+    z-index: 1;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+.r-header-search>.searchtext {
+    border-radius: 10px;
+    background-color: #ebe0d9;
+    border: rgb(155, 155, 155) 1px solid;
+    outline: none;
+    width: 150px;
+    font-size: 15px;
+}
+
+.searchpic {
+    width: 80%;
+    height: 100%;
+}
+
+.searchbtn {
+    border: none;
+    background-color: #f0e2d700;
+    cursor: pointer;
+}
+
+/*購物車跟會員*/
+.r-header-smallpic {
+    width: 180px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 70px;
+    cursor: pointer;
+    position: absolute;
+    left: 1430px;
+    z-index: 1;
+}
+
+.r-h-smallpic-memcart {
+    width: 40px;
+    height: 40px;
+    margin: 33px 0px;
+    margin-right: 20px;
+}
+
+.r-h-smallpic-memcart>img {
+    width: 100%;
+    height: 100%;
+}
+
+.all {
+    width: 1900px;
+    height: auto;
+    margin: auto;
+    padding: 50px 0px 0px 40px;
+}
+
+/*footer*/
+.footer {
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+    font-size: larger;
+}
+
+.footer-contactus {
+    width: 250px;
+    margin: 7px 20px
+}
+
+.footer-count {
+    width: 500px;
+    margin: 5px;
+    margin-left: 510px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+.footer-our {
+    width: 400px;
+    margin: 7px 20px;
+}
+
+.footer-our>p {
+    text-align: center;
+}
+
+/*-----------------------------*/
+.check-bbox {
+    background-image: url(../img/m1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10PX;
+    width: 1800px;
+    height: 710px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.check-sbox {
+    background-color: rgba(119, 119, 119, 0.466);
+    width: 1700px;
+    height: 650px;
+    display: flex;
+    margin: 30px 0 0 50px;
+    border-radius: 10px;
+}
+
+.check-sbox-1 {
+    background-color: rgba(255, 247, 128, 0.746);
+    width: 750px;
+    height: 610px;
+    display: block;
+    margin: 20px 0 0 60px;
+}
+
+.check-sbox-title {
+    background-color: rgb(103, 163, 182);
+    width: 750px;
+    height: 80px;
+    display: flex;
+    padding: 10px 0 0 20px;
+}
+
+.check-sbox-title>h1 {
+    font-size: 60px;
+}
+
+.check-sbox-s1 {
+    background-color: rgba(255, 255, 255, 0.774);
+    width: 700px;
+    height: 100px;
+    display: flex;
+    border-radius: 10px;
+    margin: 15px 0 0 25px;
+}
+
+.check-sbox-s1ph {
+    width: 90px;
+    height: 90px;
+}
+
+.check-sbox-s1ph>img {
+    width: 90px;
+    height: auto;
+    margin: 3px 0 0 15px;
+}
+
+.check-sbox-s1ind {
+    /*background-color: rgba(177, 236, 150, 0.931);*/
+    width: 550px;
+    height: 90px;
+    display: block;
+    margin: 3px 0 0 50px;
+}
+
+.check-sbox-s1ind>p {
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.check-sbox-st1 {
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 300px;
+    height: 50px;
+    display: flex;
+    border-radius: 10px;
+    margin: 10px 0 0 420px;
+    padding: 10px 0 0 20px;
+}
+
+.check-sbox-st1>p {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.check-sbox-2 {
+    background-color: rgba(212, 226, 233, 0.794);
+    width: 780px;
+    height: 610px;
+    display: block;
+    margin: 20px 0 0 70px;
+}
+
+.check-row {
+    width: 700px;
+    height: 50px;
+    display: flex;
+    margin: 10px 0 0 30px;
+    padding-top: 10px;
+}
+
+.check-name>p {
+    font-size: 30px;
+}
+
+.check-name {
+    width: 250px;
+    height: 40px;
+    margin: 0px 0 0 20px;
+}
+
+.check-name input[type="text"] {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: -35px 0px 0px 95px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.check-email {
+    width: 250px;
+    height: 40px;
+    margin: 0px 0 0 75px;
+}
+
+.check-email>p {
+    font-size: 30px;
+}
+
+.check-email input[type="text"] {
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin: -35px 0px 0px 145px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.check-address {
+    width: 210px;
+    height: 40px;
+    margin: 0px 0 0 20px;
+}
+
+.check-address>p {
+    font-size: 30px;
+}
+
+.check-address input[type="text"] {
+    display: block;
+    width: 380px;
+    height: 40px;
+    margin: -35px 0px 0px 220px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.check-payway {
+    width: 150px;
+    height: 40px;
+    margin: -10px 0 0 20px;
+    /*padding-top: px;*/
+}
+
+.check-payway>p {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.pay-word {
+    font-size: 20px;
+    margin: -5px 0px 0px 0px;
+}
+
+.check-store {
+    width: 150px;
+    height: 40px;
+    margin: -10px 0 0 20px;
+    /*padding-top: px;*/
+}
+
+.check-store>p {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.pay-word1 {
+    font-size: 20px;
+    margin: -5px 0px 0px -60px;
+}
+
+.check-storename {
+    width: 150px;
+    height: 40px;
+    margin: -10px 0 0 20px;
+    /*padding-top: px;*/
+}
+
+.check-storename>p {
+    font-size: 27px;
+    margin-top: 10px;
+}
+
+.check-storename input[type="text"] {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: -30px 0px 0px 145px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.check-card {
+    width: 150px;
+    height: 40px;
+    margin: -10px 0 0 20px;
+    /*padding-top: px;*/
+}
+
+.check-card>p {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.check-card input[type="text"] {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: -30px 0px 0px 155px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.check-card1 {
+    width: 200px;
+    height: 40px;
+    margin: -10px 0 0 20px;
+    /*padding-top: px;*/
+}
+
+.check-card1>p {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.check-card1 input[type="text"] {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: -30px 0px 0px 185px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.pay-write {
+    width: 750px;
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 30px;
+    display: flex;
+}
+
+textarea {
+    background-color: #f5f4f0;
+    width: 450px;
+    font-size: 23px;
+    height: 100px;
+    padding: 5px 0 0 5px;
+    border-radius: 10px;
+    margin-left: 30px;
+    border: none;
+    resize: none;
+}
+
+.pay-Btn {
+    background-color: #095252;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+
+.pay-Btn:hover {
+    background-color: #f34e4e;
+    color: rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

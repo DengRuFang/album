@@ -1,0 +1,853 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: lightyellow;
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 華康棒棒體W5;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/*header*/
+header {
+    margin-top: 25px;
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+}
+
+/*字型----------------------*/
+@font-face{
+    font-family: '華康棒棒體W5';
+    src: url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.woff') format("woff"),
+        url('../font/DFBnagBang-W5-WIN-BF-01.ttf') format("truetype"),
+        url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
+}
+
+.r-header-titlebox {
+    width: 250px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.r-header-title {
+    padding: 10px;
+    width: 100%;
+}
+
+.r-header-title>img {
+    width: 100%;
+}
+
+.r-header-title2 {
+    position: absolute;
+    top: 35px;
+    left: 58px;
+    width: 250px;
+    opacity: 0;
+}
+
+.r-header-titlebox:hover>.r-header-title2 {
+    opacity: 1;
+}
+
+.r-header-titlebox:hover>.r-header-title {
+    opacity: 0;
+}
+
+.r-header-title2>img {
+    width: 100%;
+}
+
+/*選單*/
+.r-header-nav {
+    width: 900px;
+    margin: 10px;
+    display: flex;
+    margin-left: 180px;
+}
+
+.r-h-n-text-content {
+    font-size: 24px;
+    margin: 33px;
+    transform: scale(1, 1.05);
+}
+
+.r-h-n-text-content:hover {
+    width: 100px;
+    height: 33px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #63a5a5;
+    padding-top: 3px;
+    transform: scale(1, 1.05);
+}
+
+/*搜尋*/
+.r-header-search {
+    height: 40px;
+    width: 200px;
+    margin-top: 55px;
+    margin-left: 60px;
+    position: absolute;
+    left: 1320px;
+    z-index: 1;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+.r-header-search>.searchtext {
+    border-radius: 10px;
+    background-color: #ebe0d9;
+    border: rgb(155, 155, 155) 1px solid;
+    outline: none;
+    width: 150px;
+    font-size: 15px;
+}
+
+.searchpic {
+    width: 100%;
+    height: 100%;
+}
+
+.searchbtn {
+    border: none;
+    background-color: #f0e2d700;
+    cursor: pointer;
+}
+
+/*購物車跟會員*/
+.r-header-smallpic {
+    width: 180px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 70px;
+    cursor: pointer;
+    position: absolute;
+    left: 1430px;
+    z-index: 1;
+}
+
+.r-h-smallpic-memcart {
+    width: 40px;
+    height: 40px;
+    margin: 33px 0px;
+    margin-right: 20px;
+}
+
+.r-h-smallpic-memcart>img {
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------------------------------------第一個區域*/
+/*廣告*/
+.r-main-section-ad {
+    height: 800px;
+    margin: 0px 100px;
+    border-radius: 30px;
+}
+
+.page {
+    position: relative;
+    top: -50px;
+    height: 870px;
+    margin: 10vh auto;
+    display: flex;
+    max-width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    height: 800px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.photo-container {
+    position: relative;
+    top: 30px;
+    left: -120px;
+    transform: rotate(0deg);
+}
+
+.photo-cont-item {
+    display: flex;
+    width: calc(260px * 6);
+}
+
+.photo-item {
+    width: 200px;
+    height: 200px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+}
+
+.animation-1 {
+    animation: scroller 40s linear infinite;
+    display: flex;
+    width: calc(260px * 12);
+}
+
+.animation-2 {
+    margin-left: 150px;
+    animation: scroller 30s linear infinite;
+    display: flex;
+    width: calc(260px * 12);
+}
+
+.animation-3 {
+    animation: scroller 50s linear infinite;
+    display: flex;
+    width: calc(260px * 12);
+}
+
+@keyframes scroller {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-260px * 6));
+    }
+}
+
+.photo-1,
+.photo-2,
+.photo-3,
+.photo-4,
+.photo-5,
+.photo-6,
+.photo-7,
+.photo-8,
+.photo-9,
+.photo-10,
+.photo-11,
+.photo-12,
+.photo-13,
+.photo-14,
+.photo-15,
+.photo-16,
+.photo-17,
+.photo-18 {
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+}
+
+.photo-1:hover,
+.photo-2:hover,
+.photo-3:hover,
+.photo-4:hover,
+.photo-5:hover,
+.photo-6:hover,
+.photo-7:hover,
+.photo-8:hover,
+.photo-9:hover,
+.photo-10:hover,
+.photo-11:hover,
+.photo-12:hover,
+.photo-13:hover,
+.photo-14:hover,
+.photo-15:hover,
+.photo-16:hover,
+.photo-17:hover,
+.photo-18:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.photo-1 {
+    background-image: url(../img/bts1-2-normal.jpg);
+}
+
+.photo-2 {
+    background-image: url(../img/bts2-2-normal.jpg);
+}
+
+.photo-3 {
+    background-image: url(../img/bts3.jpg);
+}
+
+.photo-4 {
+    background-image: url(../img/coldplay1-2-normal.jpg);
+}
+
+.photo-5 {
+    background-image: url(../img/coldplay3-2-normal.jpg);
+}
+
+.photo-6 {
+    background-image: url(../img/edsheeran2-2-normal.jpg);
+}
+
+.photo-7 {
+    background-image: url(../img/edsheeran4-2-normal.jpg);
+}
+
+.photo-8 {
+    background-image: url(../img/exo2.jpg);
+}
+
+.photo-9 {
+    background-image: url(../img/exo4.jpg);
+}
+
+.photo-10 {
+    background-image: url(../img/feng2.jpg);
+}
+
+.photo-11 {
+    background-image: url(../img/feng4.jpg);
+}
+
+.photo-12 {
+    background-image: url(../img/five2.jpg);
+}
+
+.photo-13 {
+    background-image: url(../img/gd2.jpg);
+}
+
+.photo-14 {
+    background-image: url(../img/ge3.jpg);
+}
+
+.photo-15 {
+    background-image: url(../img/iu2.jpg);
+}
+
+.photo-16 {
+    background-image: url(../img/gem4.jpg);
+}
+
+.photo-17 {
+    background-image: url(../img/gilde4.jpg);
+}
+
+.photo-18 {
+    background-image: url(../img/iu1.jpg);
+}
+
+/*四個分類*/
+.r-main-section-four {
+    height: 650px;
+    margin: 50px 100px;
+    border-radius: 20px;
+    display: flex;
+}
+
+/*top3左邊*/
+.r-m-section-four-three {
+    height: 550px;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+/*抒情下面兩格*/
+.r-m-s-four-three-two {
+    height: 250px;
+    width: 100%;
+    display: flex;
+}
+
+/*抒情*/
+.r-m-s-four-three-lyrical {
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url(../img/lyrical.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.r-m-s-four-insidebox,
+.r-m-s-four-insidebox2 {
+    height: 150px;
+    position: relative;
+    top: 80px;
+    background-color: rgba(255, 255, 255, 0.699);
+    transition: 0.4s;
+}
+
+.r-m-s-four-insidebox:hover,
+.r-m-s-four-insidebox2:hover {
+    background-color: #b1754dd2;
+    color: white;
+}
+
+.r-m-s-four-insidebox2 {
+    top: 50px;
+}
+
+.r-m-s-four-insidebox-text {
+    text-align: center;
+    height: 80px;
+    width: 300px;
+    font-size: 72px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+/*rock*/
+.r-m-s-f-three-two-rock {
+    width: 400px;
+    border-radius: 20px;
+    margin: 15px 15px 0px 0px;
+    background-image: url(../img/rock.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+/*傷感*/
+.r-m-s-f-three-two-sad {
+    width: 400px;
+    border-radius: 20px;
+    margin: 15px 0px 0px 15px;
+    background-image: url(../img/sad.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+/*top3*/
+.r-m-section-four-top3 {
+    height: 550px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 50px 0 0px 100px;
+    background-image: url(../img/top3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.r-m-section-four-top3-insidebox {
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: 70px;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.r-m-section-four-top3-insidebox:hover {
+    background-color: #b1754dd2;
+    color: white;
+}
+
+.r-m-section-four-top3-insidebox:hover>.r-m-top3-title-text {
+    font-size: 80px;
+}
+
+.r-m-section-four-top3-text {
+    font-size: 72px;
+    width: 150px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+
+/*--------------------------------------------------第二個區域*/
+.r-m-to3 {
+    height: 900px;
+}
+
+/*標題區塊*/
+.r-m-top3-title {
+    height: 150px;
+    margin: 0px 100px;
+    /*background-color: #65768d;*/
+    border-radius: 20px;
+}
+
+.r-m-top3-title-text {
+    font-size: 70px;
+    width: 273px;
+    margin: auto;
+    position: relative;
+    top: -130px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(236, 235, 232);
+}
+
+/*前三名*/
+.r-m-to3-contentbox {
+    height: 750px;
+    margin: 0px 250px;
+    margin-top: 30px;
+    display: flex;
+    /*background-color: #ffed9f;*/
+    background-image: url(../img/trophy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(75, 75, 75);
+    background-blend-mode: multiply;
+    border-radius: 20px;
+}
+
+.r-m-to3-contentbox-top2,
+.r-m-to3-contentbox-top3 {
+    height: 450px;
+    width: 350px;
+    border-radius: 20px;
+    margin: 200px 10px;
+    background-color: #65768dad;
+}
+
+.r-m-to3-contentbox-top1 {
+    height: 600px;
+    width: 450px;
+    border-radius: 20px;
+    margin: 50px 0px;
+    background-color: #bbbbbb9f;
+}
+
+.r-m-to3-contentbox-pic {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    transform: rotate(-30deg);
+    position: relative;
+    left: 450px;
+}
+
+.r-m-to3-contentbox-pic>img {
+    width: 100%;
+}
+
+/*第一名專輯內容*/
+.top1-cdpic {
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+.top1-cdpic:hover>.front {
+    opacity: 0;
+}
+
+.top1-cdpic:hover>.back {
+    opacity: 1;
+
+}
+
+.top1-cdpic>.back {
+    position: relative;
+    top: -305px;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.top1-cdpic,
+.top1-cdpic2 {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 8px 8px 3px rgba(128, 128, 128, 0.589);
+}
+
+.top1-cdpic>img {
+    width: 100%;
+}
+
+.top1-cdtext,
+.top1-cdtext2,
+.top1-cdtext3 {
+    font-size: 42px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.555);
+    text-align: center;
+}
+
+.top1-cdtext {
+    margin: 50px auto;
+    width: 200px;
+}
+
+.r-m-top1-win {
+    height: 100px;
+    width: 70px;
+    overflow: hidden;
+    position: relative;
+    top: 20px;
+    left: 75px;
+}
+
+.r-m-top1-win>img {
+    height: 100%;
+    width: 100%;
+}
+
+/*第二名專輯內容*/
+.top1-cdpic2 {
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+.top1-cdpic2>img {
+    height: 100%;
+    width: 100%;
+}
+
+.top1-cdtext2 {
+    height: 50px;
+    width: 250px;
+    position: relative;
+    top: 60px;
+    left: -5px;
+}
+
+.top1-cdpic2:hover>.front {
+    opacity: 0;
+}
+
+.top1-cdpic2:hover>.back {
+    opacity: 1;
+}
+
+.top1-cdpic2>.back {
+    opacity: 0;
+    position: relative;
+    top: -305px;
+    transition: 0.2s;
+}
+
+.r-m-top2-win {
+    height: 110px;
+    width: 80px;
+    overflow: hidden;
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+
+.r-m-top2-win>img {
+    height: 100%;
+    width: 100%;
+}
+
+.winbox {
+    display: flex;
+    height: 150px;
+}
+
+/*第三名專輯內容*/
+.top1-cdtext3 {
+    font-size: 30px;
+    width: 280px;
+    height: 30px;
+    padding: 5px;
+    position: relative;
+    top: 60px;
+    left: -10px;
+}
+
+.r-m-top3-win {
+    height: 110px;
+    width: 80px;
+    overflow: hidden;
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+.r-m-top3-win>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*---------------------------------------------------------市場*/
+.r-m-market1 {
+    height: 850px;
+    margin-bottom: 50px;
+}
+
+.r-m-market1-title,
+.r-m-market1-title1 {
+    height: 150px;
+    margin: 0px 100px;
+    border-radius: 20px;
+    /*background-color: #65768d;*/
+    /*background-image: url(../img/spacewater.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+}
+
+.r-m-top3-title-pic {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.r-m-market-title-text {
+    font-size: 70px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: 5px;
+    left: -480px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(236, 235, 232);
+}
+
+.r-m-top3-title-pic {
+    font-size: 70px;
+    text-align: center;
+    margin: auto;
+    margin-left: 590px;
+    padding-top: 25px;
+    z-index: 1;
+}
+
+.r-m-market1-title1 {
+    margin-top: 50px;
+}
+
+.r-m-market1-contentbox {
+    height: 700px;
+    margin: 30px 250px;
+    border-radius: 20px;
+    /*background-color: #ffed9f;*/
+    background-image: url(../img/space.jpg);
+    background-color: #65768d;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.r-m-m1-contentbox-box {
+    height: 325px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.r-m-m1-contentbox-box-CD,
+.r-m-m1-contentbox-box-CDdown1,
+.r-m-m1-contentbox-box-CDdown2 {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px 70px;
+    background-color: #ada2a570;
+    padding: 10px;
+}
+
+.r-m-m1-cbox-box-CD-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.r-m-m1-cbox-box-CD-box-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 8px 8px 3px rgba(128, 128, 128, 0.589);
+}
+
+.r-m-m1-cbox-box-CD-box-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.r-m-m1-cbox-box-CD-box-text {
+    font-size: 26px;
+    width: 286px;
+    margin: 15px 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+
+.r-m-m1-contentbox-box-CDdown1 {
+    margin: 10px 235px;
+}
+
+.r-m-m1-contentbox-box-CDdown2 {
+    margin: 10px 80px;
+}
+
+.r-m-m1-cbox-box-CD-box-img:hover>.front {
+    opacity: 0;
+}
+
+.r-m-m1-cbox-box-CD-box-img:hover>.back {
+    opacity: 1;
+}
+
+.r-m-m1-cbox-box-CD-box-img>.back {
+    opacity: 0;
+    position: relative;
+    top: -253px;
+    transition: 0.2s;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/*footer*/
+.footer {
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+    font-size: larger;
+}
+
+.footer-contactus {
+    width: 250px;
+    margin: 7px 20px
+}
+
+.footer-count {
+    width: 500px;
+    margin: 5px;
+    margin-left: 510px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+.footer-our {
+    width: 400px;
+    margin: 7px 20px;
+}
+
+.footer-our>p {
+    text-align: center;
+}

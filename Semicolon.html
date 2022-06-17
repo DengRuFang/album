@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>;[SEMICOLON]</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/album.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="shortcut icon" href="./assets/img/maskback.png" />
+</head>
+
+<body id="body">
+    <header>
+        <a href="index.html">
+            <div class="r-header-titlebox">
+                <div class="r-header-title">
+                    <img src="./assets/img/logo.png">
+                </div>
+                <div class="r-header-title2">
+                    <img src="./assets/img/logo2.png">
+                </div>
+            </div>
+        </a>
+        <nav class="r-header-nav">
+            <a href="./All Products.html">
+                <div class="r-h-n-text-content">
+                    所有產品
+                </div>
+            </a>
+            <a href="./detail.html">
+                <div class="r-h-n-text-content">
+                    細項分類
+                </div>
+            </a>
+            <a href="./member.html">
+                <div class="r-h-n-text-content">
+                    會員資料
+                </div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="r-h-n-text-content">
+                    關於我們
+                </div>
+            </a>
+            <a href="./question.html">
+                <div class="r-h-n-text-content">
+                    常見問題
+                </div>
+            </a>
+        </nav>
+        <form action="./search.html" method="post">
+            <div class="r-header-search">
+                <input type="search" class="searchtext" placeholder="搜尋">
+                <a class="r-h-search-imgbtn" href="#"><button class="searchbtn"><img src="./assets/img/search.png"
+                            class="searchpic"></button></a>
+            </div>
+        </form>
+        <div class="r-header-smallpic">
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/userpic.png" id="user">
+            </div>
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/signout.png" id="signout">
+            </div>
+            <a href="./car.html">
+                <div class="r-h-smallpic-memcart">
+                    <img src="./assets/img/cartpic.png">
+                </div>
+            </a>
+        </div>
+        <div class="outside" id="outside"></div>
+        <form action="" method="post">
+            <div class="login-form" id="loginform">
+                <img src="./assets/img/cancel.png" class="x" id="x">
+                <div class="login" id="login">
+                    <div class="loginback">
+                        <div class="login-text">
+                            登入
+                        </div>
+                        <div class="logininput">
+                            <div class="acount">
+                                帳號：<input type="text" class="input">
+                            </div>
+                            <div class="password">
+                                密碼：<input type="text" class="input">
+                            </div>
+                            <button class="loginbtn" id="loginbtn">登入</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <form action="">
+            <div class="signup" id="signup">
+                <div class="loginback">
+                    <div class="signtext">
+                        快來加入我們~！！
+                    </div>
+                    <div class="login-text">
+                        註冊
+                    </div>
+                    <div class="signinput">
+                        <div class="acount">
+                            帳號：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            密碼：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            E-mail：<input type="email" class="input" style="width: 210px;">
+                        </div>
+                        <button class="loginbtn" id="signbtn">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="mask" id="mask2">
+            <div id="maskbtn">沒有帳號，要註冊</div>
+        </div>
+    </header>
+    <div class="all">
+        <form action="" method="post">
+            <div class="album-bbox">
+                <div id="box">
+                    <div id="small">
+                        <img src="./assets/img/svt2.jpg" onmouseover="PlaySound('mySound')"
+                            onmouseout="StopSound('mySound')">
+                        <audio id='mySound' src="./assets/mp3/svtm2.mp3"></audio>
+                        <div id="mask" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"></div>
+                        <div id="big">
+                            <img src="./assets/img/svt2.jpg" width="549" height="600" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="album-ind">
+                    <div class="album-name">
+                        <h2>;[SEMICOLON]</h2>
+                    </div>
+                    <div class="album-star">
+                        <h2>NT$ 580</h2>
+                        <div class="ratings">
+                            <div class="empty_star">★★★★★</div>
+                            <div class="full_star">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="quanty">
+                        <input id="min" name="" type="button" value="-" onclick="down()">
+                        <input id="num" name="num" type="number" value="1" readonly="true">
+                        <input id="add" name="" type="button" value="+" onclick="up()">
+                        <p>個</p>
+                        <!--<h2>加入購物車</h2>-->
+                        <button type="submit" class="car-Btn" onclick="javascript:alert('已幫您加入購物車!')">加入購物車</button>
+                        <h3 id="stock">剩餘：456個</h3>
+                    </div>
+                    <div class="album-indtitle">
+                        <h2>專輯介紹</h2>
+                    </div>
+                    <div class="ind">
+                        <p>《;[SEMICOLON]》是韓國男子組合SEVENTEEN的特別專輯，由WOOZI以及桂範洙(BUMZU)擔任製作人，其他成員們共同參與作詞及編舞。由Pledis娛樂企劃，於2020年10月19日發行，主打曲為〈HOME;RUN〉。《;[SEMICOLON]》是一張向青春傳遞信息的專輯。這張專輯也傳遞了正能量，也就是『我們應該休息並享受青春』給予那些還在夢想道路上奔跑的年輕人們。主打歌為〈HOME;RUN〉，是由WOOZI參與作詞作曲，成員Vernon和Seungkwan的作品。這是一首復古風格的歌曲。這首歌傳達了強大的支持和安慰給潛力無限的青年們。
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form action="" method="post">
+            <div class="coment-title">
+                <h1>請留下你的評語</h1>
+            </div>
+            <div class="coment">
+                <div class="coment-in1">
+                    <h2>姓名:</h2>
+                    <input type="text" placeholder="Input Your Name" id="name">
+                    <div class="coment-star">
+                        <div class="star" id="star">
+                            <input>
+                            <input type="radio" name="rdStar" value="1" />
+                            <input type="radio" name="rdStar" value="2" />
+                            <input type="radio" name="rdStar" value="3" />
+                            <input type="radio" name="rdStar" value="4" />
+                            <input type="radio" name="rdStar" value="5" />
+                        </div>
+
+                        <div class="coment-write">
+                            <textarea placeholder=" write some comment~~!" id="textarea"></textarea>
+                        </div>
+                        <button type="submit" class="commemt-Btn" id="btn">送出評論</button>
+                        <button type="reset" class="commemt-Btn" id="reset">重新填寫</button>
+                    </div>
+                </div>
+                <div class="coment-in2">
+                    <h1>其他網友們的留言</h1><br>
+                    <h2 style="padding: 5px 0 0 10px; font-size: 40px; color: beige;">Review The Comment</h2>
+                    <div class="coment-review">
+                        <div class="co1-coment-review">
+                            <h2 id="anser"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="like">
+            <h1>你可能還會喜歡</h1>
+        </div>
+        <div class="like-4">
+            <div class="like-4-album">
+                <div class="album-like">
+                    <a href="./Attacca.html">
+                        <div class="album-img">
+                            <img src="./assets/img/svt1.jpg" onmouseover="this.src='assets/img/svt1-2.jpg'"
+                                onmouseout="this.src='assets/img/svt1.jpg'">
+                        </div>
+                    </a>
+                    <h1>1</h1>
+                    <div class="album-text-back">
+                        <div class="album-text-back-text">
+                            SEVENTEEN-Attacca
+                        </div>
+                    </div>
+
+                </div>
+                <div class="album-like">
+                    <a href="./Heng.html">
+                        <div class="album-img">
+                            <img src="./assets/img/svt3.jpg" onmouseover="this.src='assets/img/svt3-2.jpg'"
+                                onmouseout="this.src='assets/img/svt3.jpg'">
+                        </div>
+                    </a>
+                    <h1>2</h1>
+                    <div class="album-text-back">
+                        <div class="album-text-back-text">
+                            SEVENTEEN-Heng:garæ
+                        </div>
+                    </div>
+                </div>
+                <div class="album-like">
+                    <a href="./Al1.html">
+                        <div class="album-img">
+                            <img src="./assets/img/svt4.jpg" onmouseover="this.src='assets/img/svt4-2.jpg'"
+                                onmouseout="this.src='assets/img/svt4.jpg'">
+                        </div>
+                    </a>
+                    <h1>3</h1>
+                    <div class="album-text-back">
+                        <div class="album-text-back-text">
+                            SEVENTEEN-Al1
+                        </div>
+                    </div>
+                </div>
+                <div class="album-like">
+                    <a href="./Butter.html">
+                        <div class="album-img">
+                            <img src="./assets/img/bts2.jpg" onmouseover="this.src='assets/img/bts2-2.jpg'"
+                                onmouseout="this.src='assets/img/bts2.jpg'">
+                        </div>
+                    </a>
+                    <h1>4</h1>
+                    <div class="album-text-back">
+                        <div class="album-text-back-text">
+                            BTS-Butter
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<footer class="footer">
+    <div class="footer-contactus">
+        |聯絡我們|<br><br>
+        電話：0966-666-666<br>
+        E-mail：many@gmail.com
+    </div>
+    <div class="footer-count">
+        <br>
+        <p>進入網站人數：　人</p>
+        <br>
+        <p>版權所有© 2022 鄧如芳 謝庭芝 陳奕璇 曾羿慈</p>
+    </div>
+    <div class="footer-our">
+        |服務時間|<br><br>
+        星期一至星期五<br>
+        上午8：30~ 12：30;下午1：30~ 5：30
+    </div>
+</footer>
+<script src="./assets/js/number.js"></script>
+<script src="./assets/js/music.js"></script>
+<script src="./assets/js/picbig.js"></script>
+<script src="./assets/js/login.js"></script>
+
+</html>

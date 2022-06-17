@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/car.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="shortcut icon" href="./assets/img/maskback.png" />
+</head>
+
+<body id="body">
+    <header>
+        <a href="index.html">
+            <div class="r-header-titlebox">
+                <div class="r-header-title">
+                    <img src="./assets/img/logo.png">
+                </div>
+                <div class="r-header-title2">
+                    <img src="./assets/img/logo2.png">
+                </div>
+            </div>
+        </a>
+        <nav class="r-header-nav">
+            <a href="./All Products.html">
+                <div class="r-h-n-text-content">
+                    所有產品
+                </div>
+            </a>
+            <a href="./detail.html">
+                <div class="r-h-n-text-content">
+                    細項分類
+                </div>
+            </a>
+            <a href="./member.html">
+                <div class="r-h-n-text-content">
+                    會員資料
+                </div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="r-h-n-text-content">
+                    關於我們
+                </div>
+            </a>
+            <a href="./question.html">
+                <div class="r-h-n-text-content">
+                    常見問題
+                </div>
+            </a>
+        </nav>
+        <form action="./search.html" method="post">
+            <div class="r-header-search">
+                <input type="search" class="searchtext" placeholder="搜尋">
+                <a class="r-h-search-imgbtn" href="#"><button class="searchbtn"><img src="./assets/img/search.png"
+                            class="searchpic"></button></a>
+            </div>
+        </form>
+        <div class="r-header-smallpic">
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/userpic.png" id="user">
+            </div>
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/signout.png" id="signout">
+            </div>
+            <a href="./car.html">
+                <div class="r-h-smallpic-memcart">
+                    <img src="./assets/img/cartpic.png">
+                </div>
+            </a>
+        </div>
+        <div class="outside" id="outside"></div>
+        <form action="" method="post">
+            <div class="login-form" id="loginform">
+                <img src="./assets/img/cancel.png" class="x" id="x">
+                <div class="login" id="login">
+                    <div class="loginback">
+                        <div class="login-text">
+                            登入
+                        </div>
+                        <div class="logininput">
+                            <div class="acount">
+                                帳號：<input type="text" class="input">
+                            </div>
+                            <div class="password">
+                                密碼：<input type="text" class="input">
+                            </div>
+                            <button class="loginbtn" id="loginbtn">登入</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <form action="">
+            <div class="signup" id="signup">
+                <div class="loginback">
+                    <div class="signtext">
+                        快來加入我們~！！
+                    </div>
+                    <div class="login-text">
+                        註冊
+                    </div>
+                    <div class="signinput">
+                        <div class="acount">
+                            帳號：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            密碼：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            E-mail：<input type="email" class="input" style="width: 210px;">
+                        </div>
+                        <button class="loginbtn" id="signbtn">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="mask" id="mask2">
+            <div id="maskbtn">沒有帳號，要註冊</div>
+        </div>
+    </header>
+    <div class="all">
+        <form action="checkout.html" method="post">
+            <div class="car-bbox">
+                <div class="car-sbox">
+                    <div class="car-sbox-1">
+                        <div class="car-sbox-1ph">
+                            <img src="./assets/img/bts2.jpg ">
+                        </div>
+                        <div class="car-sbox-1ind">
+                            <div class="car-sbox-1ind-title">
+                                <h1>產品名稱：BTS 防彈少年團-Butter</h1>
+                            </div>
+                            <p>出貨時間：7-14天<br>單價：$780</p>
+                            <div class="quanty2">
+                                <input id="min2" name="" type="button" value="-" onclick="down2()">
+                                <input id="num2" name="num" type="number" value="1" readonly="true">
+                                <input id="add2" name="" type="button" value="+" onclick="up2()">
+                                <p>個</p>
+                                <!--<h2>加入購物車</h2>-->
+                            </div>
+                            <div class="car-sbox-1total">
+                                <h2>金額：780元</h2>
+                                <button type="reset" class="car-Btn" id="reset"
+                                    onclick="javascript:alert('已刪除此商品!')">刪除訂單</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-sbox-1">
+                        <div class="car-sbox-1ph">
+                            <img src="./assets/img/iu2.jpg ">
+                        </div>
+                        <div class="car-sbox-1ind">
+                            <div class="car-sbox-1ind-title">
+                                <h1>產品名稱：IU 李知恩-LILAC</h1>
+                            </div>
+                            <p>出貨時間：7-14天<br>單價：$590</p>
+                            <div class="quanty2">
+                                <input id="min3" name="" type="button" value="-" onclick="down3()">
+                                <input id="num3" name="num3" type="number" value="1" readonly="true">
+                                <input id="add3" name="" type="button" value="+" onclick="up3()">
+                                <p>個</p>
+                                <!--<h2>加入購物車</h2>-->
+                            </div>
+                            <div class="car-sbox-1total">
+                                <h2>金額：590元</h2>
+                                <button type="reset" class="car-Btn" id="reset"
+                                    onclick="javascript:alert('已刪除此商品!')">刪除訂單</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-sbox-1">
+                        <div class="car-sbox-1ph">
+                            <img src="./assets/img/feng5.jpg ">
+                        </div>
+                        <div class="car-sbox-1ind">
+                            <div class="car-sbox-1ind-title">
+                                <h1>產品名稱：邱鋒澤-預言家</h1>
+                            </div>
+                            <p>出貨時間：7-14天<br>單價：$650</p>
+                            <div class="quanty2">
+                                <input id="min4" name="" type="button" value="-" onclick="down4()">
+                                <input id="num4" name="num4" type="number" value="1" readonly="true">
+                                <input id="add4" name="" type="button" value="+" onclick="up4()">
+                                <p>個</p>
+                                <!--<h2>加入購物車</h2>-->
+                            </div>
+                            <div class="car-sbox-1total">
+                                <h2>金額：650元</h2>
+                                <button type="reset" class="car-Btn" id="reset"
+                                    onclick="javascript:alert('已刪除此商品!')">刪除訂單</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-sbox-1">
+                        <div class="car-sbox-1ph">
+                            <img src="./assets/img/shawn1.jpg ">
+                        </div>
+                        <div class="car-sbox-1ind">
+                            <div class="car-sbox-1ind-title">
+                                <h1>產品名稱：Shawn Mendes-When You're Gone</h1>
+                            </div>
+                            <p>出貨時間：7-14天<br>單價：$590</p>
+                            <div class="quanty2">
+                                <input id="min5" name="" type="button" value="-" onclick="down5()">
+                                <input id="num5" name="num5" type="number" value="1" readonly="true">
+                                <input id="add5" name="" type="button" value="+" onclick="up5()">
+                                <p>個</p>
+                                <!--<h2>加入購物車</h2>-->
+                            </div>
+                            <div class="car-sbox-1total">
+                                <h2>金額：590元</h2>
+                                <button type="reset" class="car-Btn" id="reset"
+                                    onclick="javascript:alert('已刪除此商品!')">刪除訂單</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-sbox-2">
+                        <div class="car-sbox-2-ph">
+                            <img src="./assets/img/plus.png">
+                        </div>
+                        <h1>總金額：2410元</h1>
+                        <button type="submit" class="car-total-Btn" id="submit">結帳</button>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<footer class="footer">
+    <div class="footer-contactus">
+        |聯絡我們|<br><br>
+        電話：0966-666-666<br>
+        E-mail：many@gmail.com
+    </div>
+    <div class="footer-count">
+        <br>
+        <p>進入網站人數：　人</p>
+        <br>
+        <p>版權所有© 2022 鄧如芳 謝庭芝 陳奕璇 曾羿慈</p>
+    </div>
+    <div class="footer-our">
+        |服務時間|<br><br>
+        星期一至星期五<br>
+        上午8：30~ 12：30;下午1：30~ 5：30
+    </div>
+</footer>
+<script src="./assets/js/car.js"></script>
+<script src="./assets/js/login.js"></script>
+
+</html>

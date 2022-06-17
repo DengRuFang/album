@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body id="body">
+    <header>
+        <a href="index.html">
+            <div class="r-header-titlebox">
+                <div class="r-header-title">
+                    <img src="./assets/img/logo.png">
+                </div>
+                <div class="r-header-title2">
+                    <img src="./assets/img/logo2.png">
+                </div>
+            </div>
+        </a>
+        <nav class="r-header-nav">
+            <a href="./All Products.html">
+                <div class="r-h-n-text-content">
+                    所有產品
+                </div>
+            </a>
+            <a href="./detail.html">
+                <div class="r-h-n-text-content">
+                    細項分類
+                </div>
+            </a>
+            <a href="./member.html">
+                <div class="r-h-n-text-content">
+                    會員資料
+                </div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="r-h-n-text-content">
+                    關於我們
+                </div>
+            </a>
+            <a href="./question.html">
+                <div class="r-h-n-text-content">
+                    常見問題
+                </div>
+            </a>
+        </nav>
+        <form action="./search.html" method="post">
+            <div class="r-header-search">
+                <input type="search" class="searchtext" placeholder="搜尋">
+                <a class="r-h-search-imgbtn" href="#"><button class="searchbtn"><img src="./assets/img/search.png"
+                            class="searchpic"></button></a>
+            </div>
+        </form>
+        <div class="r-header-smallpic">
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/userpic.png" id="user">
+            </div>
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/signout.png" id="signout">
+            </div>
+            <a href="./car.html">
+                <div class="r-h-smallpic-memcart">
+                    <img src="./assets/img/cartpic.png">
+                </div>
+            </a>
+        </div>
+        <div class="outside" id="outside"></div>
+        <form action="" method="post">
+            <div class="login-form" id="loginform">
+                <img src="./assets/img/cancel.png" class="x" id="x">
+                <div class="login" id="login">
+                    <div class="loginback">
+                        <div class="login-text">
+                            登入
+                        </div>
+                        <div class="logininput">
+                            <div class="acount">
+                                帳號：<input type="text" class="input">
+                            </div>
+                            <div class="password">
+                                密碼：<input type="text" class="input">
+                            </div>
+                            <button class="loginbtn" id="loginbtn">登入</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <form action="">
+            <div class="signup" id="signup">
+                <div class="loginback">
+                    <div class="signtext">
+                        快來加入我們~！！
+                    </div>
+                    <div class="login-text">
+                        註冊
+                    </div>
+                    <div class="signinput">
+                        <div class="acount">
+                            帳號：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            密碼：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            E-mail：<input type="email" class="input" style="width: 210px;">
+                        </div>
+                        <button class="loginbtn" id="signbtn">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="mask" id="mask2">
+            <div id="maskbtn">沒有帳號，要註冊</div>
+        </div>
+    </header>
+    <div class="all">
+        <div class="check-bbox">
+            <div class="check-sbox">
+                <div class="check-sbox-1">
+                    <div class="check-sbox-title">
+                        <h1>確認您的訂單明細</h1>
+                    </div>
+                    <div class="check-sbox-s1">
+                        <div class="check-sbox-s1ph">
+                            <img src="./assets/img/bts2.jpg">
+                        </div>
+                        <div class="check-sbox-s1ind">
+                            <p>產品名稱：BTS 防彈少年團-Butter<br>訂購數量：1個<br>訂購金額：$580</p>
+                        </div>
+                    </div>
+                    <div class="check-sbox-s1">
+                        <div class="check-sbox-s1ph">
+                            <img src="./assets/img/iu2.jpg">
+                        </div>
+                        <div class="check-sbox-s1ind">
+                            <p>產品名稱：IU 李知恩-LILAC<br>訂購數量：1個<br>訂購金額：$590</p>
+                        </div>
+                    </div>
+                    <div class="check-sbox-s1">
+                        <div class="check-sbox-s1ph">
+                            <img src="./assets/img/feng5.jpg">
+                        </div>
+                        <div class="check-sbox-s1ind">
+                            <p>產品名稱：邱鋒澤-預言家<br>訂購數量：1個<br>訂購金額：$650</p>
+                        </div>
+                    </div>
+                    <div class="check-sbox-s1">
+                        <div class="check-sbox-s1ph">
+                            <img src="./assets/img/shawn1.jpg">
+                        </div>
+                        <div class="check-sbox-s1ind">
+                            <p>產品名稱：Shawn Mendes-When You're Gone<br>訂購數量：1個<br>訂購金額：$590</p>
+                        </div>
+                    </div>
+                    <div class="check-sbox-st1">
+                        <p>總金額：2410元</p>
+                    </div>
+                </div>
+                <div class="check-sbox-2">
+                    <div class="check-sbox-title" style="width: 780px;">
+                        <h1>付款方式</h1>
+                    </div>
+                    <div class="check-row">
+                        <div class="check-name">
+                            <p>姓名:</p>
+                            <input type="text" placeholder="請輸入你的名字" id="name">
+                        </div>
+                        <div class="check-email">
+                            <p>電子信箱：</p>
+                            <input type="text" placeholder="請輸入你的電子信箱" id="email">
+                        </div>
+                    </div>
+                    <div class="check-row">
+                        <div class="check-store">
+                            <p>超商：</p>
+                        </div>
+                        <select size="1" name="pay" class="pay-word1">
+                            <option>7-11</option>
+                            <option>萊爾富</option>
+                            <option>全家</option>
+                            <option>OK</option>
+                            <option>無</option>
+                        </select>
+                        <div class="check-storename">
+                            <p>店號/店名：</p>
+                            <input type="text" placeholder="店號/店名(宅配無需填寫)" id="storename">
+                        </div>
+                    </div>
+                    
+                    <div class="check-row">
+                        <div class="check-address">
+                            <p>宅配收件地址：</p>
+                            <input type="text" placeholder="*超商取貨無需填寫" id="address">
+                        </div>
+                    </div>
+                    <div class="check-row">
+                        <div class="check-payway">
+                            <p>付款方式：</p>
+                        </div>
+                        <select size="1" name="pay" class="pay-word">
+                            <option>貨到付款</option>
+                            <option>信用卡</option>
+                            <option>銀行轉帳</option>
+                        </select>
+                    </div>
+                    <div class="check-row">
+                        <div class="check-card1">
+                            <p>信用卡卡號：</p>
+                            <input type="text" placeholder="請輸入你的卡號" id="card">
+                        </div>
+                    </div>
+                    <div class="check-row">
+                        <div class="check-card">
+                            <p>銀行帳號：</p>
+                            <input type="text" placeholder="請輸入你的帳號" id="card2">
+                        </div>
+                    </div>
+                    <!--<div class="check-row">
+                        <div class="check-store">
+                            <p>超商：</p>
+                        </div>
+                        <select size="1" name="pay" class="pay-word1">
+                            <option>7-11</option>
+                            <option>萊爾富</option>
+                            <option>全家</option>
+                            <option>OK</option>
+                        </select>
+                        <div class="check-storename">
+                            <p>店號/店名：</p>
+                            <input type="text" placeholder="店號/店名" id="storename">
+                        </div>
+                    </div>-->
+
+                    <div class="pay-write">
+                        <textarea placeholder=" 備註 OR 想對我們說的話!" id="textarea2"></textarea>
+                        <a href="./index.html">
+                            <button type="submit" class="pay-Btn" id="btn"
+                                onclick="javascript:alert('已幫您提交訂單!')">提交</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/login.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-contactus">
+        |聯絡我們|<br><br>
+        電話：0966-666-666<br>
+        E-mail：many@gmail.com
+    </div>
+    <div class="footer-count">
+        <br>
+        <p>進入網站人數：　人</p>
+        <br>
+        <p>版權所有© 2022 鄧如芳 謝庭芝 陳奕璇 曾羿慈</p>
+    </div>
+    <div class="footer-our">
+        |服務時間|<br><br>
+        星期一至星期五<br>
+        上午8：30~ 12：30;下午1：30~ 5：30
+    </div>
+</footer>
+
+</html>

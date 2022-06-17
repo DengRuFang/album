@@ -1,0 +1,787 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "華康棒棒體W5";
+}
+
+body {
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1903px;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+
+/*header*/
+header {
+    margin-top: 5px;
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+}
+
+/*字型----------------------*/
+@font-face{
+    font-family: '華康棒棒體W5';
+    src: url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.woff') format("woff"),
+        url('../font/DFBnagBang-W5-WIN-BF-01.ttf') format("truetype"),
+        url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
+}
+
+.r-header-titlebox {
+    width: 250px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.r-header-title {
+    padding: 10px;
+    width: 100%;
+}
+
+.r-header-title>img {
+    width: 100%;
+}
+
+.r-header-title2 {
+    position: absolute;
+    top: 35px;
+    left: 58px;
+    width: 250px;
+    opacity: 0;
+}
+
+.r-header-titlebox:hover>.r-header-title2 {
+    opacity: 1;
+}
+
+.r-header-titlebox:hover>.r-header-title {
+    opacity: 0;
+}
+
+.r-header-title2>img {
+    width: 100%;
+}
+
+/*選單*/
+.r-header-nav {
+    width: 900px;
+    margin: 10px;
+    display: flex;
+    margin-left: 180px;
+}
+
+.r-h-n-text-content {
+    font-size: 24px;
+    margin: 33px;
+    transform: scale(1, 1.05);
+}
+
+.r-h-n-text-content:hover {
+    width: 100px;
+    height: 33px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #63a5a5;
+    padding-top: 3px;
+    transform: scale(1, 1.05);
+}
+
+/*搜尋*/
+.r-header-search {
+    height: 40px;
+    width: 200px;
+    margin-top: 55px;
+    margin-left: 60px;
+    position: absolute;
+    left: 1320px;
+    z-index: 1;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+.r-header-search>.searchtext {
+    border-radius: 10px;
+    background-color: #ebe0d9;
+    border: rgb(155, 155, 155) 1px solid;
+    outline: none;
+    width: 150px;
+    font-size: 15px;
+}
+
+.searchpic {
+    width: 80%;
+    height: 100%;
+}
+
+.searchbtn {
+    border: none;
+    background-color: #f0e2d700;
+    cursor: pointer;
+}
+
+/*購物車跟會員*/
+.r-header-smallpic {
+    width: 180px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 70px;
+    cursor: pointer;
+    position: absolute;
+    left: 1430px;
+    z-index: 1;
+}
+
+.r-h-smallpic-memcart {
+    width: 40px;
+    height: 40px;
+    margin: 33px 0px;
+    margin-right: 20px;
+}
+
+.r-h-smallpic-memcart>img {
+    width: 100%;
+    height: 100%;
+}
+
+.all {
+    width: 1900px;
+    height: auto;
+    margin: auto;
+    padding: 50px 0px 0px 40px;
+}
+
+/*footer*/
+.footer {
+    height: 100px;
+    background-color: #f0e2d7;
+    display: flex;
+    font-size: larger;
+}
+
+.footer-contactus {
+    width: 250px;
+    margin: 7px 20px
+}
+
+.footer-count {
+    width: 500px;
+    margin: 5px;
+    margin-left: 510px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+.footer-our {
+    width: 400px;
+    margin: 7px 20px;
+}
+
+.footer-our>p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*------------------------------------*/
+.back-bbox {
+    background-image: url(../img/m3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10PX;
+    width: 1800px;
+    height: 710px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.back-mbox {
+    background-color: rgba(93, 93, 93, 0.678);
+    width: 1600px;
+    height: 600px;
+    margin: 60px 0 0 100px;
+    display: block;
+    border-radius: 10px;
+}
+
+.back-option1 {
+    /*background-color: rgba(255, 255, 255, 0.842);*/
+    width: 1000px;
+    height: 100px;
+    margin: 150px 0 0 270px;
+    display: flex;
+}
+
+.back-option2 {
+    /*background-color: rgba(255, 255, 255, 0.842);*/
+    width: 1000px;
+    height: 100px;
+    margin: 100px 0 0 270px;
+    display: flex;
+}
+
+.back-option1-Btn {
+    background-color: #095252;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.back-option1-Btn:hover {
+    background-color: #f34e4e;
+    color: rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+.back-option2-Btn {
+    background-color: #095252;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.back-option2-Btn:hover {
+    background-color: #f34e4e;
+    color: rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+/*---------------------修改會員資料-------------------------------------*/
+.dmember-bbox {
+    background-image: url(../img/m9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10PX;
+    width: 1800px;
+    height: auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.dmember-mbox {
+    background-color: rgba(144, 142, 142, 0.746);
+    width: 1600px;
+    height: 1400px;
+    margin: 60px 0 80px 100px;
+    display: block;
+    border-radius: 10px;
+}
+
+.dmember-sbox {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 1500px;
+    height: 250px;
+    margin: 70px 0 10px 50px;
+    display: flex;
+}
+
+.dmember-sbox-ph {
+    width: 230px;
+    height: 230px;
+    background-color: #09525265;
+    margin: 10px 0 0 130px;
+}
+
+.dmember-sbox-ph>img {
+    width: 250px;
+    height: auto;
+}
+
+.dmember-sbox-ind {
+    width: 900px;
+    height: 230px;
+    margin: 10px 0 0 100px;
+}
+
+.dmember-sbox-ind>p {
+    font-size: 30px;
+    line-height: 28pt;
+    margin: 10px 0 0 30px;
+    line-height: 40pt;
+}
+
+.dmember-Btn {
+    background-color: #095252;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.dmember-Btn:hover {
+    background-color: #f34e4e;
+    color: rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+/*--------------------------------------------新增商品-----------------------------------*/
+.nproducts-bbox {
+    background-image: url(../img/m3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10PX;
+    width: 1800px;
+    height: 710px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.nproducts-mbox {
+    background-color: rgba(93, 93, 93, 0.678);
+    width: 1600px;
+    height: 640px;
+    margin: 60px 0 0 100px;
+    display: block;
+    border-radius: 10px;
+}
+
+.nproducts-option1 {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 1000px;
+    height: 100px;
+    margin: 50px 0 0 270px;
+    display: flex;
+}
+
+.nproducts-option1>p {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nproducts-option1 input[type="text"] {
+    display: block;
+    width: 450px;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.nproducts-option2 {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 1000px;
+    height: 100px;
+    margin: 50px 0 0 270px;
+    display: flex;
+}
+
+.nproducts-option2>p {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nproducts-option2 input[type="text"] {
+    display: block;
+    width: 450px;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.nproducts-option3 {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 1000px;
+    height: 100px;
+    margin: 50px 0 0 270px;
+    display: flex;
+}
+
+.nproducts-option3>p {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nproducts-option3 input[type="text"] {
+    display: block;
+    width: 450px;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.nproducts-Btn {
+    background-color: #095252;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: -60px;
+    margin-left: 1350px;
+    margin-right: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.nproducts-Btn:hover {
+    background-color: #f34e4e;
+    color: rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+/*--------------------------修改商品-------------------------*/
+.revise-products-bbox {
+    background-image: url(../img/m3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10PX;
+    width: 1800px;
+    height: 710px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.revise-products-mbox {
+    background-color: rgba(93, 93, 93, 0.678);
+    width: 1600px;
+    height: 640px;
+    margin: 60px 0 0 100px;
+    display: block;
+    border-radius: 10px;
+}
+
+.revise-products-option1 {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 1000px;
+    height: 100px;
+    margin:50px 0 0 270px;
+    display: flex;
+}
+
+.revise-products-option1>p {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.revise-products-option1 input[type="text"] {
+    display: block;
+    width: 450px;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.revise-products-option2 {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 1000px;
+    height: 100px;
+    margin: 50px 0 0 270px;
+    display: flex;
+}
+
+.revise-products-option2>p {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.revise-products-option2 input[type="text"] {
+    display: block;
+    width: 450px;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.revise-products-option3 {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 1000px;
+    height: 100px;
+    margin: 50px 0 0 270px;
+    display: flex;
+}
+
+.revise-products-option3>p {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.revise-products-option3 input[type="text"] {
+    display: block;
+    width: 450px;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.revise-products-Btn {
+    background-color: #095252;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: -60px;
+    margin-left: 1350px;
+    margin-right: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.revise-products-Btn:hover {
+    background-color: #f34e4e;
+    color: rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+/*---------------------------------刪除商品---------------*/
+.main {
+    height: 10500px;
+    padding-top: 60px;
+}
+
+.delback {
+    margin: auto;
+    width: 1800px;
+    height: 10400px;
+    background-image: url(../img/m3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+.delbackback {
+    background-color: rgba(161, 161, 161, 0.74);
+    border-radius: 20px;
+    height: 10345px;
+    width: 1700px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.delbackbackback {
+    height: 630px;
+    width: 1600px;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+}
+
+.delproduct {
+    height: 580px;
+    width: 900px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.delproinside {
+    height: 180px;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    padding-left: 50px;
+    margin: 0px 0px 10px 0px;
+}
+
+.productimg {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.productimg>img {
+    height: 100%;
+    width: 100%;
+}
+
+.productcontent {
+    width: 370px;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.delbtn {
+    background-color: #f7e8df;
+    font-size: 21px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    top: 120px;
+    left: -10px;
+    transition: 0.2s;
+    border: rgb(88, 88, 88) 1px solid;
+}
+
+.delbtn:hover {
+    background-color: #63a5a5;
+    color: white;
+}
+
+/*---------------------------------訂單管理---------------*/
+.ordermain {
+    height: 1000px;
+    padding-top: 20px;
+}
+
+.orderback {
+    background-image: url(../img/m3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 950px;
+    width: 1760px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.orderbackback {
+    background-color: rgba(161, 161, 161, 0.74);
+    border-radius: 20px;
+    height: 900px;
+    width: 1700px;
+    margin-left: 25px;
+    padding-top: 20px;
+}
+
+.orderproduct {
+    height: 200px;
+    width: 1600px;
+    margin-left: 50px;
+    border-radius: 20px;
+    background-color: rgba(247, 243, 243, 0.733);
+    display: flex;
+    margin-top: 10px;
+}
+
+.ordernumber {
+    margin-top: 55px;
+    margin-left: 30px;
+    font-size: 50px;
+}
+
+.ordercontent {
+    margin: 10px 100px;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.orderbtn {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.orderinsidebtn {
+    font-size: 28px;
+    height: 50px;
+    border-radius: 13px;
+    padding: 5px;
+    margin: 10px 0px;
+    margin-left: 200px;
+    cursor: pointer;
+    background-color: rgb(253, 249, 232);
+    border: #6b6b6a 1px solid;
+    transition: 0.3s;
+}
+
+.orderinsidebtn:hover {
+    background-color: #63a5a5;
+    color: white;
+}
+
+.orderdetail {
+    background-color: white;
+    position: fixed;
+    top: 200px;
+    left: 620px;
+    z-index: 1;
+    height: 400px;
+    width: 700px;
+    border: #518b8f 10px solid;
+    visibility: hidden;
+}
+
+.detailtitle {
+    height: 60px;
+    width: 100%;
+    background-color: #518b8f;
+    padding-top: 5px;
+    display: flex;
+}
+
+.text {
+    font-size: 34px;
+    margin-left: 10px;
+}
+
+.outpic {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    margin-left: 450px;
+    cursor: pointer;
+}
+
+.outpic>img {
+    height: 100%;
+    width: 100%;
+}
+
+.detailcontent {
+    height: 60px;
+    width: 650px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.detailcontent {
+    font-size: 28px;
+    height: 50px;
+}
+
+.detailcontent>p {
+    height: 30px;
+    width: 130px;
+    text-align: center;
+    margin: 5px 50px;
+
+}

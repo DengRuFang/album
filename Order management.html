@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單管理</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/back.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="shortcut icon" href="./assets/img/maskback.png" />
+</head>
+
+<body id="body">
+    <header>
+        <a href="index.html">
+            <div class="r-header-titlebox">
+                <div class="r-header-title">
+                    <img src="./assets/img/logo.png">
+                </div>
+                <div class="r-header-title2">
+                    <img src="./assets/img/logo2.png">
+                </div>
+            </div>
+        </a>
+        <nav class="r-header-nav">
+            <a href="./All Products.html">
+                <div class="r-h-n-text-content">
+                    所有產品
+                </div>
+            </a>
+            <a href="./detail.html">
+                <div class="r-h-n-text-content">
+                    細項分類
+                </div>
+            </a>
+            <a href="./member.html">
+                <div class="r-h-n-text-content">
+                    會員資料
+                </div>
+            </a>
+            <a href="./aboutus.html">
+                <div class="r-h-n-text-content">
+                    關於我們
+                </div>
+            </a>
+            <a href="./question.html">
+                <div class="r-h-n-text-content">
+                    常見問題
+                </div>
+            </a>
+        </nav>
+        <form action="./search.html" method="post">
+            <div class="r-header-search">
+                <input type="search" class="searchtext" placeholder="搜尋">
+                <a class="r-h-search-imgbtn" href="#"><button class="searchbtn"><img src="./assets/img/search.png"
+                            class="searchpic"></button></a>
+            </div>
+        </form>
+        <div class="r-header-smallpic">
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/userpic.png" id="user">
+            </div>
+            <div class="r-h-smallpic-memcart">
+                <img src="./assets/img/signout.png" id="signout">
+            </div>
+            <a href="./car.html">
+                <div class="r-h-smallpic-memcart">
+                    <img src="./assets/img/cartpic.png">
+                </div>
+            </a>
+        </div>
+        <div class="outside" id="outside"></div>
+        <form action="" method="post">
+            <div class="login-form" id="loginform">
+                <img src="./assets/img/cancel.png" class="x" id="x">
+                <div class="login" id="login">
+                    <div class="loginback">
+                        <div class="login-text">
+                            登入
+                        </div>
+                        <div class="logininput">
+                            <div class="acount">
+                                帳號：<input type="text" class="input">
+                            </div>
+                            <div class="password">
+                                密碼：<input type="text" class="input">
+                            </div>
+                            <button class="loginbtn" id="loginbtn">登入</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        <form action="">
+            <div class="signup" id="signup">
+                <div class="loginback">
+                    <div class="signtext">
+                        快來加入我們~！！
+                    </div>
+                    <div class="login-text">
+                        註冊
+                    </div>
+                    <div class="signinput">
+                        <div class="acount">
+                            帳號：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            密碼：<input type="text" class="input">
+                        </div>
+                        <div class="password">
+                            E-mail：<input type="email" class="input" style="width: 210px;">
+                        </div>
+                        <button class="loginbtn" id="signbtn">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="mask" id="mask2">
+            <div id="maskbtn">沒有帳號，要註冊</div>
+        </div>
+    </header>
+    <main class="ordermain">
+        <article>
+            <div class="orderdetail" id="orderdetail">
+                <div class="detailtitle">
+                    <div class="text">
+                        <h3>詳細內容</h3>
+                    </div>
+                    <div class="outpic">
+                        <img src="./assets/img/cancel.png" id="orderdetailclose">
+                    </div>
+                </div>
+                <div class="detailcontent">
+                    <p>商品名稱</p>
+                    <p>數量</p>
+                    <p>價格</p>
+                </div>
+                <form action="" method="post">
+                    <div class="detailcontent">
+                        <p>冰山</p>
+                        <p>3</p>
+                        <p>650</p>
+                    </div>
+                    <div class="detailcontent">
+                        <p>預言家</p>
+                        <p>1</p>
+                        <p>650</p>
+                    </div>
+                    <div class="detailcontent">
+                        <p>已讀不回</p>
+                        <p>1</p>
+                        <p>600</p>
+                    </div>
+                </form>
+            </div>
+            <section>
+                <div class="orderback">
+                    <div class="orderbackback">
+                        <!--第一個訂單-->
+                        <form action="" method="post">
+                            <div class="orderproduct">
+                                <div class="ordernumber">
+                                    #1
+                                </div>
+                                <div class="ordercontent">
+                                    <p>日期：2022/6/3 PM 10:26</p>
+                                    <p>顧客：林美女</p>
+                                    <p>付款狀態：貨到付款</p>
+                                    <p>配送狀態：未出貨</p>
+                                </div>
+                                <div class="ordercontent">
+                                    <p>配送方式：7-11貨到付款</p>
+                                    <p>退貨狀態：不需退貨</p>
+                                    <p>備註：無</p>
+                                    <p>總金額：3200</p>
+                                </div>
+                                <div class="orderbtn">
+                                    <button type="button" class="orderinsidebtn">訂單詳細</button>
+                                    <button type="submit" class="orderinsidebtn" onclick="delorder()">刪除訂單</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!--第二個訂單-->
+                        <form action="" method="post">
+                            <div class="orderproduct">
+                                <div class="ordernumber">
+                                    #2
+                                </div>
+                                <div class="ordercontent">
+                                    <p>日期：2022/6/1 AM 10:00</p>
+                                    <p>顧客：王曉明</p>
+                                    <p>付款狀態：貨到付款</p>
+                                    <p>配送狀態：已出貨</p>
+                                </div>
+                                <div class="ordercontent">
+                                    <p>配送方式：全家貨到付款</p>
+                                    <p>退貨狀態：不需退貨</p>
+                                    <p>備註：無</p>
+                                    <p>總金額：3200</p>
+                                </div>
+                                <div class="orderbtn">
+                                    <button type="button" class="orderinsidebtn">訂單詳細</button>
+                                    <button type="submit" class="orderinsidebtn" onclick="delorder()">刪除訂單</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!--第三個訂單-->
+                        <form action="" method="post">
+                            <div class="orderproduct">
+                                <div class="ordernumber">
+                                    #3
+                                </div>
+                                <div class="ordercontent">
+                                    <p>日期：2022/5/28 PM 8:24</p>
+                                    <p>顧客：陳小美</p>
+                                    <p>付款狀態：貨到付款</p>
+                                    <p>配送狀態：已出貨</p>
+                                </div>
+                                <div class="ordercontent">
+                                    <p>配送方式：7-11貨到付款</p>
+                                    <p>退貨狀態：不需退貨</p>
+                                    <p>備註：無</p>
+                                    <p>總金額：3200</p>
+                                </div>
+                                <div class="orderbtn">
+                                    <button type="button" class="orderinsidebtn">訂單詳細</button>
+                                    <button type="submit" class="orderinsidebtn" onclick="delorder()">刪除訂單</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!--第四個訂單-->
+                        <form action="" method="post">
+                            <div class="orderproduct">
+                                <div class="ordernumber">
+                                    #4
+                                </div>
+                                <div class="ordercontent">
+                                    <p>日期：2022/5/26 PM 6:56</p>
+                                    <p>顧客：白富帥</p>
+                                    <p>付款狀態：貨到付款</p>
+                                    <p>配送狀態：已出貨</p>
+                                </div>
+                                <div class="ordercontent">
+                                    <p>配送方式：7-11貨到付款</p>
+                                    <p>退貨狀態：不需退貨</p>
+                                    <p>備註：無</p>
+                                    <p>總金額：3200</p>
+                                </div>
+                                <div class="orderbtn">
+                                    <button type="button" class="orderinsidebtn">訂單詳細</button>
+                                    <button type="submit" class="orderinsidebtn" onclick="delorder()">刪除訂單</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+    </main>
+</body>
+<footer class="footer">
+    <div class="footer-contactus">
+        |聯絡我們|<br><br>
+        電話：0966-666-666<br>
+        E-mail：many@gmail.com
+    </div>
+    <div class="footer-count">
+        <br>
+        <p>進入網站人數：　人</p>
+        <br>
+        <p>版權所有© 2022 鄧如芳 謝庭芝 陳奕璇 曾羿慈</p>
+    </div>
+    <div class="footer-our">
+        |服務時間|<br><br>
+        星期一至星期五<br>
+        上午8：30~ 12：30;下午1：30~ 5：30
+    </div>
+</footer>
+<script src="./assets/js/login.js"></script>
+<script src="./assets/js/order.js"></script>
+
+</html>
