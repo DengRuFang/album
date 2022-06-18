@@ -282,7 +282,7 @@ header {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 315%;
+    top: 312%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -315,7 +315,7 @@ header {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 475%;
+    top: 466%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
