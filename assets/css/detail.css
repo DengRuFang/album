@@ -9,6 +9,7 @@ body {
     background-size: cover;
     font-family: 華康棒棒體W5;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -20,23 +21,29 @@ a {
 /*header*/
 header {
     margin-top: 25px;
-    height: 100px;
+    height: 10%;
     background-color: #f0e2d7;
     display: flex;
+    width: 100%;
 }
 
 /*字型----------------------*/
-@font-face{
+@font-face {
     font-family: '華康棒棒體W5';
     src: url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.woff') format("woff"),
         url('../font/DFBnagBang-W5-WIN-BF-01.ttf') format("truetype"),
         url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
 }
 
+.indexa {
+    width: 20%;
+}
+
 .r-header-titlebox {
-    width: 250px;
+    margin-top: 1%;
+    width: 90%;
     overflow: hidden;
-    margin-left: 40px;
+    margin-left: 7%;
 }
 
 .r-header-title {
@@ -50,10 +57,11 @@ header {
 
 .r-header-title2 {
     position: absolute;
-    top: 35px;
-    left: 58px;
-    width: 250px;
+    top: 38px;
+    left: 38px;
+    width: 16%;
     opacity: 0;
+    border-radius: 20px;
 }
 
 .r-header-titlebox:hover>.r-header-title2 {
@@ -70,15 +78,20 @@ header {
 
 /*選單*/
 .r-header-nav {
-    width: 900px;
-    margin: 10px;
+    width: 60%;
     display: flex;
-    margin-left: 180px;
+    padding-left: 1%;
+}
+
+.nava {
+    width: 15%;
+    margin: 3%;
 }
 
 .r-h-n-text-content {
+    width: 100%;
     font-size: 24px;
-    margin: 33px;
+    margin-top: 14%;
     transform: scale(1, 1.05);
 }
 
@@ -96,13 +109,8 @@ header {
 .r-header-search {
     height: 40px;
     width: 200px;
-    margin-top: 55px;
-    margin-left: 60px;
-    position: absolute;
-    left: 1320px;
-    z-index: 1;
+    margin-top: 16%;
     display: flex;
-    transform: translate(-50%, -50%);
 }
 
 .r-header-search>.searchtext {
@@ -115,7 +123,7 @@ header {
 }
 
 .searchpic {
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -127,21 +135,21 @@ header {
 
 /*購物車跟會員*/
 .r-header-smallpic {
-    width: 180px;
+    width: 14%;
     overflow: hidden;
     display: flex;
-    margin-left: 70px;
     cursor: pointer;
-    position: absolute;
-    left: 1430px;
-    z-index: 1;
+}
+
+.carta {
+    width: 100%;
+    margin-top: 9%;
 }
 
 .r-h-smallpic-memcart {
-    width: 40px;
+    width: 45%;
     height: 40px;
-    margin: 33px 0px;
-    margin-right: 20px;
+    margin: 16% 5%;
 }
 
 .r-h-smallpic-memcart>img {
@@ -347,7 +355,7 @@ header {
 /*四個分類*/
 .r-main-section-four {
     height: 650px;
-    margin: 50px 100px;
+    margin: 50px -6.5%;
     border-radius: 20px;
     display: flex;
 }
@@ -493,8 +501,9 @@ header {
 
 /*前三名*/
 .r-m-to3-contentbox {
+    width: 86%;
     height: 750px;
-    margin: 0px 250px;
+    margin-left: 7%;
     margin-top: 30px;
     display: flex;
     /*background-color: #ffed9f;*/
@@ -509,17 +518,29 @@ header {
 .r-m-to3-contentbox-top2,
 .r-m-to3-contentbox-top3 {
     height: 450px;
-    width: 350px;
+    width: 30%;
     border-radius: 20px;
-    margin: 200px 10px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     background-color: #65768dad;
+}
+
+.r-m-to3-contentbox-top2 {
+    margin-left: -5%;
+}
+
+.r-m-to3-contentbox-top3 {
+    margin-right: 2%;
 }
 
 .r-m-to3-contentbox-top1 {
     height: 600px;
-    width: 450px;
+    width: 40%;
     border-radius: 20px;
-    margin: 50px 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: #bbbbbb9f;
 }
 
@@ -582,7 +603,8 @@ header {
 }
 
 .top1-cdtext {
-    margin: 50px auto;
+    margin-top: -16%;
+    margin-left: 32%;
     width: 200px;
 }
 
@@ -596,6 +618,19 @@ header {
 }
 
 .r-m-top1-win>img {
+    height: 100%;
+    width: 100%;
+}
+
+.r-m-top1-winn {
+    height: 110px;
+    width: 90px;
+    overflow: hidden;
+    margin-top: 6%;
+    margin-left: 14%;
+}
+
+.r-m-top1-winn>img {
     height: 100%;
     width: 100%;
 }
@@ -683,6 +718,8 @@ header {
 
 /*---------------------------------------------------------市場*/
 .r-m-market1 {
+    width: 118%;
+    margin-left: -9%;
     height: 850px;
     margin-bottom: 50px;
 }
@@ -748,6 +785,7 @@ header {
 .r-m-m1-contentbox-box {
     height: 325px;
     margin-top: 20px;
+    margin: 2% -4.5%;
     display: flex;
 }
 
@@ -831,21 +869,19 @@ header {
 }
 
 .footer-contactus {
-    width: 250px;
+    width: 30%;
     margin: 7px 20px
 }
 
 .footer-count {
-    width: 500px;
-    margin: 5px;
-    margin-left: 510px;
-    margin-right: 300px;
+    width: 100%;
+    margin-left: 10%;
     text-align: center;
 }
 
 .footer-our {
-    width: 400px;
-    margin: 7px 20px;
+    width: 50%;
+    margin: 7px 0px;
 }
 
 .footer-our>p {

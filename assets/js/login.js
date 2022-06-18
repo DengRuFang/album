@@ -42,7 +42,7 @@ x.addEventListener('click', function () {
 
 /*往右跑*/
 function rightrun() {
-    mask.style = "left:965px";
+    mask.style = "margin-left: 39%;";
     document.getElementsByClassName("input")[2].value="";
     document.getElementsByClassName("input")[3].value="";
     document.getElementsByClassName("input")[4].value="";
@@ -50,7 +50,7 @@ function rightrun() {
 
 /*往左跑*/
 function leftrun() {
-    mask.style = "left:365px";
+    mask.style = "margin-left: 0%;";
     document.getElementsByClassName("input")[0].value="";
     document.getElementsByClassName("input")[1].value="";
 }
@@ -68,7 +68,7 @@ function close() {
     mask.classList.add("hidden");
     click_store = setTimeout(function (e) {
         maskbtn.innerHTML = "沒有帳號，要註冊";
-        mask.style = "left:965px"
+        mask.style = "margin-left: 39%;"
     }, 100);
     body.classList.remove("scroll");
     outside.style.visibility = "hidden"

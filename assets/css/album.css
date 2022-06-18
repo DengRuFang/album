@@ -11,10 +11,11 @@ body {
     background-image: url(../img/3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1903px;
+    width: 100%;
     margin: auto;
     padding: 20px;
     display: block;
+    overflow-x: hidden;
 }
 
 /*字型----------------------*/
@@ -28,15 +29,21 @@ body {
 /*header*/
 header {
     margin-top: 5px;
-    height: 100px;
+    height: 10%;
     background-color: #f0e2d7;
     display: flex;
+    width: 100%;
+}
+
+.indexa{
+    width: 20%;
 }
 
 .r-header-titlebox {
-    width: 250px;
+    margin-top: 1%;
+    width: 90%;
     overflow: hidden;
-    margin-left: 40px;
+    margin-left: 7%;
 }
 
 .r-header-title {
@@ -50,10 +57,11 @@ header {
 
 .r-header-title2 {
     position: absolute;
-    top: 35px;
-    left: 58px;
-    width: 250px;
+    top: 38px;
+    left: 38px;
+    width: 16%;
     opacity: 0;
+    border-radius: 20px;
 }
 
 .r-header-titlebox:hover>.r-header-title2 {
@@ -70,15 +78,20 @@ header {
 
 /*選單*/
 .r-header-nav {
-    width: 900px;
-    margin: 10px;
+    width: 60%;
     display: flex;
-    margin-left: 180px;
+    padding-left: 1%;
+}
+
+.nava{
+    width: 15%;
+    margin: 3%;
 }
 
 .r-h-n-text-content {
+    width: 100%;
     font-size: 24px;
-    margin: 33px;
+    margin-top: 14%;
     transform: scale(1, 1.05);
 }
 
@@ -90,19 +103,15 @@ header {
     background-color: #63a5a5;
     padding-top: 3px;
     transform: scale(1, 1.05);
+    cursor: pointer;
 }
 
 /*搜尋*/
 .r-header-search {
     height: 40px;
     width: 200px;
-    margin-top: 55px;
-    margin-left: 60px;
-    position: absolute;
-    left: 1320px;
-    z-index: 1;
+    margin-top: 16%;
     display: flex;
-    transform: translate(-50%, -50%);
 }
 
 .r-header-search>.searchtext {
@@ -127,21 +136,21 @@ header {
 
 /*購物車跟會員*/
 .r-header-smallpic {
-    width: 180px;
+    width: 14%;
     overflow: hidden;
     display: flex;
-    margin-left: 70px;
     cursor: pointer;
-    position: absolute;
-    left: 1430px;
-    z-index: 1;
+}
+
+.carta{
+    width: 100%;
+    margin-top: 9%;
 }
 
 .r-h-smallpic-memcart {
-    width: 40px;
+    width: 45%;
     height: 40px;
-    margin: 33px 0px;
-    margin-right: 20px;
+    margin: 16% 5%;
 }
 
 .r-h-smallpic-memcart>img {
@@ -165,21 +174,19 @@ header {
 }
 
 .footer-contactus {
-    width: 250px;
+    width: 30%;
     margin: 7px 20px
 }
 
 .footer-count {
-    width: 500px;
-    margin: 5px;
-    margin-left: 510px;
-    margin-right: 300px;
+    width: 100%;
+    margin-left: 10%;
     text-align: center;
 }
 
 .footer-our {
-    width: 400px;
-    margin: 7px 20px;
+    width: 50%;
+    margin: 7px 0px;
 }
 
 .footer-our>p {
@@ -189,7 +196,7 @@ header {
 .album-bbox {
     background-color: rgba(236, 227, 203, 0.65);
     border-radius: 10PX;
-    width: 1800px;
+    width: 76%;
     height: 680px;
     display: flex;
     margin-bottom: 30px;
@@ -245,7 +252,7 @@ header {
 .album-ind {
     background-color: #dfdcd5f3;
     border-radius: 10px;
-    width: 1100px;
+    width: 50%;
     height: 550px;
     display: block;
     margin-top: 70px;
@@ -255,7 +262,7 @@ header {
 .album-name {
     background-color: #E6C786;
     /*rgb(137, 172, 200);*/
-    width: 1100px;
+    width: 100%;
     height: 70px;
 }
 
@@ -380,7 +387,7 @@ header {
 .ind {
     background-color: #ceaf7de5;
     /*rgba(159, 211, 203, 0.993);#D4C3AA*/
-    width: 1000px;
+    width: 90%;
     height: 250px;
     margin-top: 10px;
     margin-left: 40px;
@@ -388,14 +395,18 @@ header {
 }
 
 .ind>p {
-    font-size: 27px;
-    line-height: 30pt;
+    font-size: 22px;
+    line-height: 22pt;
+}
+
+#name{
+    width: 95%;
 }
 
 .coment {
     background-color: #c7a9a181;
     border-radius: 10PX;
-    width: 1800px;
+    width: 76%;
     height: 760px;
     display: flex;
     margin-bottom: 30px;
@@ -404,17 +415,19 @@ header {
 .coment-star {
     background-color: #ffffff;
     float: right;
-    width: 650px;
+    width: 100%;
     height: 480px;
     margin-top: 20px;
-    margin-left: 170px;
+}
 
+#textarea{
+    width: 85%;
 }
 
 .coment-review {
     background-color: #ffffff;
     float: right;
-    width: 650px;
+    width: 100%;
     height: 480px;
     margin-top: 20px;
     margin-left: 170px;
@@ -431,25 +444,24 @@ header {
 .like-4 {
     background-color: rgba(236, 227, 203, 0.507);
     border-radius: 10PX;
-    width: 1800px;
+    width: 76%;
     height: 600px;
     margin-bottom: 30px;
     display: block;
 }
 
 .like-4-album {
-    width: 1800px;
+    width: 100%;
     height: 450;
     display: flex;
 }
 
 .album-like {
-    width: 400px;
-    height: 400px;
+    width: 19%;
+    height: 200px;
     margin-top: 50px;
-    margin-left: 40px;
-
-
+    margin-left: 2%;
+    margin-right: 3%;
 }
 
 .album-like>img {
@@ -459,16 +471,16 @@ header {
 
 .coment-in1 {
     background-color: #63a5a5;
-    width: 650px;
+    width: 40%;
     height: 500px;
-    margin-left: 170px;
+    margin-left: 5%;
     margin-top: 50px;
     box-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 
 .coment-in2 {
     background-color: #63a5a5;
-    width: 650px;
+    width: 40%;
     height: 500px;
     margin-left: 150px;
     margin-top: 50px;
@@ -631,7 +643,7 @@ textarea {
 
 .co1-coment-review {
     background-color: #ffed9f;
-    width: 600px;
+    width: 90%;
     height: 400px;
     margin: 10px 0 0 25px;
     border-radius: 10px;
@@ -645,13 +657,17 @@ textarea {
 .coment-title {
     background-color: antiquewhite;
     border-radius: 10PX;
-    width: 1800px;
+    width: 76%;
     height: 100px;
 }
 
 .coment-title>h1 {
     font-size: 60px;
     padding: 15px 0 0 10px;
+}
+
+.like{
+    width: 76%;
 }
 
 .like>h1 {
@@ -693,23 +709,23 @@ textarea {
     width: 30px;
     color: rgba(0, 0, 0, 0.664);
     position: relative;
-    top: -418px;
+    top: -348px;
     left: 5px;
 }
 
 .album-img {
     margin: auto;
-    margin-top: 10px;
-    height: 380px;
-    width: 380px;
+    margin-top: 14%;
+    height: 60%;
+    width: 120%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 10px 10px rgba(37, 37, 37, 0.747);
 }
 
-.album-like:hover {
+/*.album-like:hover {
     background-color: #ebe0d94d;
-}
+}*/
 
 .album-like:hover>h1 {
     color: #ddd;
@@ -721,14 +737,14 @@ textarea {
 }
 
 .album-text-back {
-    width: 380px;
+    width: 100%;
     background-color: #ddd;
     border-radius: 10px;
     text-align: center;
     margin: 20px auto;
     position: relative;
     top: -20px;
-    left: 5px;
+    left: 30px;
     font-size: 30px;
 }
 

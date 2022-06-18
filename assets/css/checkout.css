@@ -10,18 +10,20 @@ body {
     background-image: url(../img/3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1903px;
+    width: 100%;
     margin: auto;
     padding: 20px;
     display: block;
+    overflow-x: hidden;
 }
 
 /*header*/
 header {
     margin-top: 5px;
-    height: 100px;
+    height: 10%;
     background-color: #f0e2d7;
     display: flex;
+    width: 100%;
 }
 
 /*字型----------------------*/
@@ -32,10 +34,15 @@ header {
         url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
 }
 
+.indexa{
+    width: 20%;
+}
+
 .r-header-titlebox {
-    width: 250px;
+    margin-top: 1%;
+    width: 90%;
     overflow: hidden;
-    margin-left: 40px;
+    margin-left: 7%;
 }
 
 .r-header-title {
@@ -49,10 +56,11 @@ header {
 
 .r-header-title2 {
     position: absolute;
-    top: 35px;
-    left: 58px;
-    width: 250px;
+    top: 38px;
+    left: 38px;
+    width: 16%;
     opacity: 0;
+    border-radius: 20px;
 }
 
 .r-header-titlebox:hover>.r-header-title2 {
@@ -69,15 +77,20 @@ header {
 
 /*選單*/
 .r-header-nav {
-    width: 900px;
-    margin: 10px;
+    width: 60%;
     display: flex;
-    margin-left: 180px;
+    padding-left: 1%;
+}
+
+.nava{
+    width: 15%;
+    margin: 3%;
 }
 
 .r-h-n-text-content {
+    width: 100%;
     font-size: 24px;
-    margin: 33px;
+    margin-top: 14%;
     transform: scale(1, 1.05);
 }
 
@@ -95,13 +108,8 @@ header {
 .r-header-search {
     height: 40px;
     width: 200px;
-    margin-top: 55px;
-    margin-left: 60px;
-    position: absolute;
-    left: 1320px;
-    z-index: 1;
+    margin-top: 16%;
     display: flex;
-    transform: translate(-50%, -50%);
 }
 
 .r-header-search>.searchtext {
@@ -126,21 +134,21 @@ header {
 
 /*購物車跟會員*/
 .r-header-smallpic {
-    width: 180px;
+    width: 14%;
     overflow: hidden;
     display: flex;
-    margin-left: 70px;
     cursor: pointer;
-    position: absolute;
-    left: 1430px;
-    z-index: 1;
+}
+
+.carta{
+    width: 100%;
+    margin-top: 9%;
 }
 
 .r-h-smallpic-memcart {
-    width: 40px;
+    width: 45%;
     height: 40px;
-    margin: 33px 0px;
-    margin-right: 20px;
+    margin: 16% 5%;
 }
 
 .r-h-smallpic-memcart>img {
@@ -164,21 +172,19 @@ header {
 }
 
 .footer-contactus {
-    width: 250px;
+    width: 30%;
     margin: 7px 20px
 }
 
 .footer-count {
-    width: 500px;
-    margin: 5px;
-    margin-left: 510px;
-    margin-right: 300px;
+    width: 100%;
+    margin-left: 10%;
     text-align: center;
 }
 
 .footer-our {
-    width: 400px;
-    margin: 7px 20px;
+    width: 50%;
+    margin: 7px 0px;
 }
 
 .footer-our>p {
@@ -191,32 +197,32 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10PX;
-    width: 1800px;
+    width: 1400px;
     height: 710px;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
 }
 
 .check-sbox {
     background-color: rgba(119, 119, 119, 0.466);
-    width: 1700px;
-    height: 650px;
+    width: 1350px;
+    height: 670px;
     display: flex;
-    margin: 30px 0 0 50px;
+    margin: 2% 0 0 2%;
     border-radius: 10px;
 }
 
 .check-sbox-1 {
     background-color: rgba(255, 247, 128, 0.746);
-    width: 750px;
+    width: 600px;
     height: 610px;
     display: block;
-    margin: 20px 0 0 60px;
+    margin: 2% 0 0 3%;
 }
 
 .check-sbox-title {
     background-color: rgb(103, 163, 182);
-    width: 750px;
+    width: 600px;
     height: 80px;
     display: flex;
     padding: 10px 0 0 20px;
@@ -228,11 +234,11 @@ header {
 
 .check-sbox-s1 {
     background-color: rgba(255, 255, 255, 0.774);
-    width: 700px;
+    width: 570px;
     height: 100px;
     display: flex;
     border-radius: 10px;
-    margin: 15px 0 0 25px;
+    margin: 2% 0 0 2%;
 }
 
 .check-sbox-s1ph {
@@ -266,7 +272,7 @@ header {
     height: 50px;
     display: flex;
     border-radius: 10px;
-    margin: 10px 0 0 420px;
+    margin: 3% 0 0 46%;
     padding: 10px 0 0 20px;
 }
 
@@ -277,22 +283,22 @@ header {
 
 .check-sbox-2 {
     background-color: rgba(212, 226, 233, 0.794);
-    width: 780px;
+    width: 620px;
     height: 610px;
     display: block;
-    margin: 20px 0 0 70px;
+    margin: 2% 0 0 4%;
 }
 
 .check-row {
-    width: 700px;
+    width: 600px;
     height: 50px;
     display: flex;
-    margin: 10px 0 0 30px;
+    margin: 1% 0 0 2%;
     padding-top: 10px;
 }
 
 .check-name>p {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .check-name {
@@ -313,11 +319,11 @@ header {
 .check-email {
     width: 250px;
     height: 40px;
-    margin: 0px 0 0 75px;
+    margin: 0px 0 0 3%;
 }
 
 .check-email>p {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .check-email input[type="text"] {
@@ -336,12 +342,12 @@ header {
 }
 
 .check-address>p {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .check-address input[type="text"] {
     display: block;
-    width: 380px;
+    width: 250px;
     height: 40px;
     margin: -35px 0px 0px 220px;
     border-radius: 10px;
@@ -356,7 +362,7 @@ header {
 }
 
 .check-payway>p {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 10px;
 }
 
@@ -396,7 +402,7 @@ header {
 
 .check-storename input[type="text"] {
     display: block;
-    width: 300px;
+    width: 200px;
     height: 40px;
     margin: -30px 0px 0px 145px;
     border-radius: 10px;
@@ -455,12 +461,12 @@ header {
 
 textarea {
     background-color: #f5f4f0;
-    width: 450px;
+    width: 350px;
     font-size: 23px;
     height: 100px;
     padding: 5px 0 0 5px;
     border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 0%;
     border: none;
     resize: none;
 }

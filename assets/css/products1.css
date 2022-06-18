@@ -10,7 +10,7 @@ body {
   background-image: url(../img/3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1903px;
+  width: 100%;
   margin: auto;
   padding: 20px;
   display: block;
@@ -25,9 +25,10 @@ a {
 /*header*/
 header {
   margin-top: 5px;
-  height: 100px;
+  height: 10%;
   background-color: #f0e2d7;
   display: flex;
+  width: 100%;
 }
 
 /*字型----------------------*/
@@ -38,10 +39,15 @@ header {
       url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
 }
 
+.indexa{
+  width: 20%;
+}
+
 .r-header-titlebox {
-  width: 250px;
+  margin-top: 1%;
+  width: 90%;
   overflow: hidden;
-  margin-left: 40px;
+  margin-left: 7%;
 }
 
 .r-header-title {
@@ -56,9 +62,9 @@ header {
 .r-header-title2 {
   position: absolute;
   top: 35px;
-  left: 58px;
-  width: 250px;
+  width: 15%;
   opacity: 0;
+  border-radius: 20px;
 }
 
 .r-header-titlebox:hover>.r-header-title2 {
@@ -75,15 +81,20 @@ header {
 
 /*選單*/
 .r-header-nav {
-  width: 900px;
-  margin: 10px;
+  width: 60%;
   display: flex;
-  margin-left: 180px;
+  padding-left: 1%;
+}
+
+.nava{
+  width: 15%;
+  margin: 3%;
 }
 
 .r-h-n-text-content {
+  width: 100%;
   font-size: 24px;
-  margin: 33px;
+  margin-top: 14%;
   transform: scale(1, 1.05);
 }
 
@@ -95,19 +106,15 @@ header {
   background-color: #63a5a5;
   padding-top: 3px;
   transform: scale(1, 1.05);
+  cursor:pointer;
 }
 
 /*搜尋*/
 .r-header-search {
   height: 40px;
   width: 200px;
-  margin-top: 55px;
-  margin-left: 60px;
-  position: absolute;
-  left: 1320px;
-  z-index: 1;
+  margin-top: 16%;
   display: flex;
-  transform: translate(-50%, -50%);
 }
 
 .r-header-search>.searchtext {
@@ -132,21 +139,21 @@ header {
 
 /*購物車跟會員*/
 .r-header-smallpic {
-  width: 180px;
+  width: 14%;
   overflow: hidden;
   display: flex;
-  margin-left: 70px;
   cursor: pointer;
-  position: absolute;
-  left: 1430px;
-  z-index: 1;
+}
+
+.carta{
+  width: 100%;
+  margin-top: 9%;
 }
 
 .r-h-smallpic-memcart {
-  width: 40px;
+  width: 45%;
   height: 40px;
-  margin: 33px 0px;
-  margin-right: 20px;
+  margin: 16% 5%;
 }
 
 .r-h-smallpic-memcart>img {
@@ -164,23 +171,23 @@ header {
 .midbox {
   background-color: rgba(236, 227, 203, 0.521);
   border-radius: 10PX;
-  width: 1800px;
-  height: 750px;
+  width: 1420px;
+  height: 580px;
   display: flex;
   /*margin-left: 200px;*/
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 2%;
 }
 
 .midbox-1 {
   background-color: #f1f5f6ca;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   display: block;
-  margin-left: 20px;
+  margin-left: 3%;
   text-align: center;
-  margin-top: 130px;
-  margin-bottom: 20px;
+  margin-top: 6%;
+  margin-bottom: 2%;
   border-radius: 10px;
 }
 
@@ -194,29 +201,29 @@ header {
 .midbox-1>p {
   /*padding: 40px 0px 0px 20px;*/
   margin: 30px 0px 0px 0px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
-  line-height: 28pt;
+  line-height: 20pt;
 }
 
 .show1 {
   background-color: #f1f5f6;
-  width: 1200px;
+  width: 900px;
   height: 500px;
   position: relative;
-  margin-left: 30px;
-  margin-top: 50px;
+  margin-left: 3%;
+  margin-top: 3%;
 }
 
 .midbox-2 {
   /*background-color:#15c1ec;*/
-  width: 1200px;
+  width: 900px;
   height: 500px;
   display: none;
   float: right;
-  margin-left: 30px;
+  margin-left: 4%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 3%;
 }
 
 /* Number text (1/3 etc) */
@@ -264,9 +271,9 @@ header {
 .midbox-title {
   background-color: #ebd8c9c2;
   border-radius: 10px;
-  width: 1800px;
+  width: 1420px;
   height: 90px;
-  margin-bottom: 20px;
+  margin-bottom: 2%;
   text-align: left;
   padding-top: 20px;
   padding-left: 10px;
@@ -276,8 +283,8 @@ header {
 .midbox-album {
   background-color: rgba(236, 227, 203, 0.521);
   border-radius: 10px;
-  width: 1800px;
-  height: 600px;
+  width: 1420px;
+  height: 500px;
   display: flex;
   /*margin-left: 200px;*/
   text-align: center;
@@ -286,20 +293,20 @@ header {
 
 .album {
   /*background-color:#f1f5f6;*/
-  width: 360px;
-  height: 360px;
+  width: 270px;
+  height: 270px;
   display: block;
   text-align: center;
-  margin-left: 20px;
+  margin-left: 2%;
   /*padding: 100px 0px 0px 0px;*/
-  margin-top: 20px;
-  margin-left: 70px;
+  margin-top: 2%;
+  margin-left: 5%;
   /*margin-bottom: 20px;*/
 }
 
 .albumph {
-  width: 360px;
-  height: 360px;
+  width: 270px;
+  height: 270px;
   display: block;
   position: absolute;
   transition: all 1s;
@@ -322,7 +329,7 @@ header {
   justify-content: center;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 380px;
+  margin-top: 110%;
 }
 
 .but {
@@ -330,9 +337,9 @@ header {
   float: left;
   padding: 10px 5px 0 0;
   background-color: #e2cba09d;
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 18%;
   display: block;
 }
 
@@ -346,7 +353,7 @@ header {
 }
 
 audio {
-  width: 250px;
+  width: 180px;
 }
 
 /*footer*/
@@ -358,21 +365,19 @@ audio {
 }
 
 .footer-contactus {
-  width: 250px;
+  width: 30%;
   margin: 7px 20px
 }
 
 .footer-count {
-  width: 500px;
-  margin: 5px;
-  margin-left: 510px;
-  margin-right: 300px;
+  width: 100%;
+  margin-left: 10%;
   text-align: center;
 }
 
 .footer-our {
-  width: 400px;
-  margin: 7px 20px;
+  width: 50%;
+  margin: 7px 0px;
 }
 
 .footer-our>p {

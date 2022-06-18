@@ -16,6 +16,7 @@ body {
     margin: auto;
     padding: 20px;
     display: block;
+    overflow-x: hidden;
 }
 
 a {
@@ -64,7 +65,8 @@ header {
 
 .r-header-title2 {
     position: absolute;
-    top: 35px;
+    top: 38px;
+    left: 47px;
     width: 15%;
     opacity: 0;
     border-radius: 20px;
@@ -164,15 +166,15 @@ header {
 }
 
 .all {
-    width: 1900px;
+    width: 80%;
     height: auto;
-    margin: auto;
-    padding: 50px 0px 0px 40px;
+    margin-left: 25%;
+    padding: 3% 0px 0px 0px;
 }
 
 .allP-midbox1 {
     border-radius: 10PX;
-    width: 1800px;
+    width:80%;
     height: 750px;
     display: flex;
     text-align: center;
@@ -182,7 +184,7 @@ header {
 
 .warpper {
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
     perspective: 800px;
     transform-style: preserve-3d;
@@ -207,9 +209,10 @@ header {
 .newword {
     width: auto;
     height: 80px;
-    position: relative;
-    top: 630px;
-    left: 560px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 65%;
+    margin-left: 5%;
     font-size: 40px;
 
 }
@@ -225,9 +228,10 @@ header {
 .country {
     background-image: url("../img/korea.jpg");
     border-radius: 10PX;
-    width: 1800px;
+    width:120%;
     height: 350px;
     margin-top: 30px;
+    margin-left: -29%;
     filter: blur(5px);
     -webkit-filter: blur(5px);
     background-position: center;
@@ -257,10 +261,11 @@ header {
 .country2 {
     background-image: url("../img/europe.jpg");
     border-radius: 10PX;
-    width: 1800px;
+    width: 120%;
     height: 350px;
     display: flex;
     margin-top: 30px;
+    margin-left: -29%;
     filter: blur(5px);
     -webkit-filter: blur(5px);
     background-position: center;
@@ -277,7 +282,7 @@ header {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 2410px;
+    top: 315%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -289,10 +294,11 @@ header {
 .country3 {
     background-image: url("../img/taiwan.jpg");
     border-radius: 10PX;
-    width: 1800px;
+    width: 120%;
     height: 350px;
     display: flex;
     margin-top: 30px;
+    margin-left: -29%;
     filter: blur(5px);
     -webkit-filter: blur(5px);
     background-position: center;
@@ -309,7 +315,7 @@ header {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 3690px;
+    top: 475%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -323,33 +329,35 @@ header {
     /*background-color: #aab8abb2;*/
     background-color: rgba(236, 227, 203, 0.521);
     border-radius: 10PX;
-    width: 1800px;
+    width: 120%;
     height: auto;
     display: block;
+    margin-left: -29%;
     margin-top: 30px;
     margin-bottom: 30px;
 
 }
 
 .k-midbox {
-    width: 1800px;
-    height: 570px;
+    width: 100%;
+    height: 60%;
     display: flex;
 
 }
 
 .albumbox-1 {
-    background-color: #42403fca;
+    /*background-color: #42403fca;*/
     border-radius: 250px;
-    width: 450px;
-    height: 450px;
-    margin-left: 110px;
-    margin-top: 70px;
+    width: 380px;
+    height: 380px;
+    margin-left: 8%;
+    margin-top: 2%;
     position: relative;
 }
 
 .k-singer {
-    width: 450px;
+    margin-left: -26%;
+    width: 380px;
     height: auto;
     border-radius: 250px;
     box-shadow: 20px 20px 40px rgb(0, 0, 0);
@@ -372,16 +380,17 @@ header {
 }
 
 .albumbox-2 {
-    background-color: #42403fca;
-    width: 260px;
-    height: 260px;
-    margin-left: 33px;
+    /*background-color: #42403fca;*/
+    width: 210px;
+    height: 210px;
+    margin-top: 3%;
+    margin-left: 1.2%;
     border-radius: 250px;
     position: relative;
 }
 
 .k-singer2 {
-    width: 260px;
+    width: 210px;
     height: auto;
     border-radius: 250px;
     box-shadow: 10px 10px 20px rgb(0, 0, 0);
@@ -399,8 +408,8 @@ header {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: 20%;
     width: auto;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -409,19 +418,26 @@ header {
 
 .text1 {
     color: white;
-    font-size: 70px;
+    font-size: 75px;
     text-align: center;
     width: 450px;
     padding-bottom: 30px;
+    margin-left: 2%;
+    margin-top: 45%;
     /*padding: 16px ;*/
 }
 
 .text2 {
+
     color: white;
-    font-size: 55px;
+    font-size: 45px;
     text-align: center;
     width: 260px;
     padding-bottom: 20px;
+    position: absolute;
+    top: 40px;
+    left: -70px;
+
     /*padding: 16px ;*/
 }
 
@@ -434,21 +450,19 @@ header {
 }
 
 .footer-contactus {
-    width: 250px;
+    width: 30%;
     margin: 7px 20px
 }
 
 .footer-count {
-    width: 500px;
-    margin: 5px;
-    margin-left: 510px;
-    margin-right: 300px;
+    width: 100%;
+    margin-left: 10%;
     text-align: center;
 }
 
 .footer-our {
-    width: 400px;
-    margin: 7px 20px;
+    width: 50%;
+    margin: 7px 0px;
 }
 
 .footer-our>p {

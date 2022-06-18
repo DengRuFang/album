@@ -10,7 +10,7 @@ body {
     background-image: url(../img/3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1903px;
+    width: 100%;
     margin: auto;
     padding: 20px;
     display: block;
@@ -19,9 +19,10 @@ body {
 /*header*/
 header {
     margin-top: 5px;
-    height: 100px;
+    height: 10%;
     background-color: #f0e2d7;
     display: flex;
+    width: 100%;
 }
 
 /*字型----------------------*/
@@ -32,10 +33,15 @@ header {
         url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
 }
 
+.indexa{
+    width: 20%;
+}
+
 .r-header-titlebox {
-    width: 250px;
+    margin-top: 1%;
+    width: 90%;
     overflow: hidden;
-    margin-left: 40px;
+    margin-left: 7%;
 }
 
 .r-header-title {
@@ -49,10 +55,11 @@ header {
 
 .r-header-title2 {
     position: absolute;
-    top: 35px;
-    left: 58px;
-    width: 250px;
+    top: 38px;
+    left: 38px;
+    width: 16%;
     opacity: 0;
+    border-radius: 20px;
 }
 
 .r-header-titlebox:hover>.r-header-title2 {
@@ -69,15 +76,20 @@ header {
 
 /*選單*/
 .r-header-nav {
-    width: 900px;
-    margin: 10px;
+    width: 60%;
     display: flex;
-    margin-left: 180px;
+    padding-left: 1%;
+}
+
+.nava{
+    width: 15%;
+    margin: 3%;
 }
 
 .r-h-n-text-content {
+    width: 100%;
     font-size: 24px;
-    margin: 33px;
+    margin-top: 14%;
     transform: scale(1, 1.05);
 }
 
@@ -89,19 +101,15 @@ header {
     background-color: #63a5a5;
     padding-top: 3px;
     transform: scale(1, 1.05);
+    cursor: pointer;
 }
 
 /*搜尋*/
 .r-header-search {
     height: 40px;
     width: 200px;
-    margin-top: 55px;
-    margin-left: 60px;
-    position: absolute;
-    left: 1320px;
-    z-index: 1;
+    margin-top: 16%;
     display: flex;
-    transform: translate(-50%, -50%);
 }
 
 .r-header-search>.searchtext {
@@ -126,21 +134,21 @@ header {
 
 /*購物車跟會員*/
 .r-header-smallpic {
-    width: 180px;
+    width: 14%;
     overflow: hidden;
     display: flex;
-    margin-left: 70px;
     cursor: pointer;
-    position: absolute;
-    left: 1430px;
-    z-index: 1;
+}
+
+.carta{
+    width: 100%;
+    margin-top: 9%;
 }
 
 .r-h-smallpic-memcart {
-    width: 40px;
+    width: 45%;
     height: 40px;
-    margin: 33px 0px;
-    margin-right: 20px;
+    margin: 16% 5%;
 }
 
 .r-h-smallpic-memcart>img {
@@ -164,21 +172,19 @@ header {
 }
 
 .footer-contactus {
-    width: 250px;
+    width: 30%;
     margin: 7px 20px
 }
 
 .footer-count {
-    width: 500px;
-    margin: 5px;
-    margin-left: 510px;
-    margin-right: 300px;
+    width: 100%;
+    margin-left: 10%;
     text-align: center;
 }
 
 .footer-our {
-    width: 400px;
-    margin: 7px 20px;
+    width: 50%;
+    margin: 7px 0px;
 }
 
 .footer-our>p {
@@ -196,17 +202,17 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10PX;
-    width: 1800px;
-    height: 710px;
+    width: 1400px;
+    height: 680px;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
 }
 
 .back-mbox {
     background-color: rgba(93, 93, 93, 0.678);
-    width: 1600px;
+    width: 1350px;
     height: 600px;
-    margin: 60px 0 0 100px;
+    margin: 3% 0 0 2%;
     display: block;
     border-radius: 10px;
 }
@@ -215,7 +221,7 @@ a {
     /*background-color: rgba(255, 255, 255, 0.842);*/
     width: 1000px;
     height: 100px;
-    margin: 150px 0 0 270px;
+    margin: 10% 0 0 10%;
     display: flex;
 }
 
@@ -223,7 +229,7 @@ a {
     /*background-color: rgba(255, 255, 255, 0.842);*/
     width: 1000px;
     height: 100px;
-    margin: 100px 0 0 270px;
+    margin: 10% 0 0 11%;
     display: flex;
 }
 
@@ -273,26 +279,26 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10PX;
-    width: 1800px;
+    width: 1400px;
     height: auto;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
 }
 
 .dmember-mbox {
     background-color: rgba(144, 142, 142, 0.746);
-    width: 1600px;
-    height: 1400px;
-    margin: 60px 0 80px 100px;
+    width: 1350px;
+    height: 1200px;
+    margin: 2% 0 2% 2%;
     display: block;
     border-radius: 10px;
 }
 
 .dmember-sbox {
     background-color: rgba(255, 255, 255, 0.842);
-    width: 1500px;
+    width: 1280px;
     height: 250px;
-    margin: 70px 0 10px 50px;
+    margin: 3% 0 2% 3%;
     display: flex;
 }
 
@@ -300,7 +306,7 @@ a {
     width: 230px;
     height: 230px;
     background-color: #09525265;
-    margin: 10px 0 0 130px;
+    margin: 0.7% 0 0 4%;
 }
 
 .dmember-sbox-ph>img {
@@ -347,17 +353,17 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10PX;
-    width: 1800px;
-    height: 710px;
+    width: 1400px;
+    height: 680px;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
 }
 
 .nproducts-mbox {
     background-color: rgba(93, 93, 93, 0.678);
-    width: 1600px;
-    height: 640px;
-    margin: 60px 0 0 100px;
+    width: 1350px;
+    height: 600px;
+    margin: 3% 0 0 2%;
     display: block;
     border-radius: 10px;
 }
@@ -365,13 +371,13 @@ a {
 .nproducts-option1 {
     background-color: rgba(255, 255, 255, 0.842);
     width: 1000px;
-    height: 100px;
-    margin: 50px 0 0 270px;
+    height: 80px;
+    margin: 3% 0 0 15%;
     display: flex;
 }
 
 .nproducts-option1>p {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -380,7 +386,7 @@ a {
     display: block;
     width: 450px;
     height: 50px;
-    margin: 25px 0px 0px 0px;
+    margin: 1.7% 0px 0px 0px;
     border-radius: 10px;
     font-size: 25px;
 }
@@ -388,13 +394,13 @@ a {
 .nproducts-option2 {
     background-color: rgba(255, 255, 255, 0.842);
     width: 1000px;
-    height: 100px;
-    margin: 50px 0 0 270px;
+    height: 80px;
+    margin: 3% 0 0 15%;
     display: flex;
 }
 
 .nproducts-option2>p {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -403,7 +409,7 @@ a {
     display: block;
     width: 450px;
     height: 50px;
-    margin: 25px 0px 0px 0px;
+    margin: 1.7% 0px 0px 0px;
     border-radius: 10px;
     font-size: 25px;
 }
@@ -411,13 +417,13 @@ a {
 .nproducts-option3 {
     background-color: rgba(255, 255, 255, 0.842);
     width: 1000px;
-    height: 100px;
-    margin: 50px 0 0 270px;
+    height: 80px;
+    margin: 3% 0 0 15%;
     display: flex;
 }
 
 .nproducts-option3>p {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -426,7 +432,7 @@ a {
     display: block;
     width: 450px;
     height: 50px;
-    margin: 25px 0px 0px 0px;
+    margin: 1.7% 0px 0px 0px;
     border-radius: 10px;
     font-size: 25px;
 }
@@ -438,9 +444,9 @@ a {
     border: none;
     width: 150px;
     height: 50px;
-    margin-top: -60px;
-    margin-left: 1350px;
-    margin-right: 20px;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 80%;
     font-size: 30px;
     border-radius: 10px;
 }
@@ -457,17 +463,17 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10PX;
-    width: 1800px;
-    height: 710px;
+    width: 1400px;
+    height: 680px;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
 }
 
 .revise-products-mbox {
     background-color: rgba(93, 93, 93, 0.678);
-    width: 1600px;
-    height: 640px;
-    margin: 60px 0 0 100px;
+    width: 1350px;
+    height: 600px;
+    margin: 3% 0 0 2%;
     display: block;
     border-radius: 10px;
 }
@@ -475,13 +481,13 @@ a {
 .revise-products-option1 {
     background-color: rgba(255, 255, 255, 0.842);
     width: 1000px;
-    height: 100px;
-    margin:50px 0 0 270px;
+    height: 80px;
+    margin: 3% 0 0 15%;
     display: flex;
 }
 
 .revise-products-option1>p {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -490,7 +496,7 @@ a {
     display: block;
     width: 450px;
     height: 50px;
-    margin: 25px 0px 0px 0px;
+    margin: 1.7% 0px 0px 0px;
     border-radius: 10px;
     font-size: 25px;
 }
@@ -498,13 +504,13 @@ a {
 .revise-products-option2 {
     background-color: rgba(255, 255, 255, 0.842);
     width: 1000px;
-    height: 100px;
-    margin: 50px 0 0 270px;
+    height: 80px;
+    margin: 3% 0 0 15%;
     display: flex;
 }
 
 .revise-products-option2>p {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -513,7 +519,7 @@ a {
     display: block;
     width: 450px;
     height: 50px;
-    margin: 25px 0px 0px 0px;
+    margin: 1.7% 0px 0px 0px;
     border-radius: 10px;
     font-size: 25px;
 }
@@ -521,13 +527,13 @@ a {
 .revise-products-option3 {
     background-color: rgba(255, 255, 255, 0.842);
     width: 1000px;
-    height: 100px;
-    margin: 50px 0 0 270px;
+    height: 80px;
+    margin: 3% 0 0 15%;
     display: flex;
 }
 
 .revise-products-option3>p {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -536,7 +542,7 @@ a {
     display: block;
     width: 450px;
     height: 50px;
-    margin: 25px 0px 0px 0px;
+    margin: 1.7% 0px 0px 0px;
     border-radius: 10px;
     font-size: 25px;
 }
@@ -548,9 +554,9 @@ a {
     border: none;
     width: 150px;
     height: 50px;
-    margin-top: -60px;
-    margin-left: 1350px;
-    margin-right: 20px;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 80%;
     font-size: 30px;
     border-radius: 10px;
 }
@@ -563,14 +569,16 @@ a {
 
 /*---------------------------------刪除商品---------------*/
 .main {
-    height: 10500px;
+    height: auto;
     padding-top: 60px;
 }
 
 .delback {
-    margin: auto;
-    width: 1800px;
-    height: 10400px;
+    width: 1400px;
+    height: 700px;
+    display: flex;
+    margin-bottom: 2%;
+    margin-left: 2%;
     background-image: url(../img/m3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -581,8 +589,8 @@ a {
 .delbackback {
     background-color: rgba(161, 161, 161, 0.74);
     border-radius: 20px;
-    height: 10345px;
-    width: 1700px;
+    height: auto;
+    width: 1350px;
     margin: auto;
     padding-top: 30px;
 }
@@ -599,19 +607,19 @@ a {
     height: 580px;
     width: 900px;
     border-radius: 10px;
-    margin: 10px 20px;
-    padding-left: 30px;
-    padding-top: 10px;
+    margin: 0 0 0 2%;
+    /*padding-left:30px;
+    padding-top: 10px;*/
 }
 
 .delproinside {
     height: 180px;
-    width: 700px;
+    width: 650px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     display: flex;
     padding-left: 50px;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 2% 0px;
 }
 
 .productimg {
@@ -630,12 +638,13 @@ a {
 .productcontent {
     width: 370px;
     font-size: 28px;
-    margin-left: 20px;
-    margin-top: 35px;
+    margin-left: 2%;
+    margin-top: 5%;
 }
 
 .delbtn {
     background-color: #f7e8df;
+    width: 150px;
     font-size: 21px;
     height: 50px;
     border-radius: 15px;
@@ -643,8 +652,8 @@ a {
     cursor: pointer;
     position: relative;
     z-index: 5;
-    top: 120px;
-    left: -10px;
+    margin-right:2%;
+    margin-top: 20%;
     transition: 0.2s;
     border: rgb(88, 88, 88) 1px solid;
 }
@@ -664,10 +673,10 @@ a {
     background-image: url(../img/m3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
     height: 950px;
-    width: 1760px;
+    width: 1400px;
     padding-top: 30px;
     border-radius: 10px;
 }
@@ -676,15 +685,15 @@ a {
     background-color: rgba(161, 161, 161, 0.74);
     border-radius: 20px;
     height: 900px;
-    width: 1700px;
-    margin-left: 25px;
+    width: 1350px;
+    margin-left: 1.5%;
     padding-top: 20px;
 }
 
 .orderproduct {
     height: 200px;
-    width: 1600px;
-    margin-left: 50px;
+    width: 1300px;
+    margin-left: 2%;
     border-radius: 20px;
     background-color: rgba(247, 243, 243, 0.733);
     display: flex;
@@ -698,9 +707,9 @@ a {
 }
 
 .ordercontent {
-    margin: 10px 100px;
-    font-size: 30px;
-    line-height: 45px;
+    margin: 2% 5%;
+    font-size: 28px;
+    line-height: 35px;
 }
 
 .orderbtn {
@@ -712,10 +721,11 @@ a {
 .orderinsidebtn {
     font-size: 28px;
     height: 50px;
+    width: 150px;
     border-radius: 13px;
     padding: 5px;
-    margin: 10px 0px;
-    margin-left: 200px;
+    margin: 2% 0px;
+    margin-left: 100%;
     cursor: pointer;
     background-color: rgb(253, 249, 232);
     border: #6b6b6a 1px solid;
@@ -730,8 +740,8 @@ a {
 .orderdetail {
     background-color: white;
     position: fixed;
-    top: 200px;
-    left: 620px;
+    top: 25%;
+    left: 28%;
     z-index: 1;
     height: 400px;
     width: 700px;
@@ -741,7 +751,8 @@ a {
 
 .detailtitle {
     height: 60px;
-    width: 100%;
+    width: 690px;
+    margin: -0.5% 0 0 0;
     background-color: #518b8f;
     padding-top: 5px;
     display: flex;

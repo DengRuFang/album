@@ -10,18 +10,20 @@ body {
     background-image: url(../img/3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1903px;
+    width: 100%;
     margin: auto;
     padding: 20px;
     display: block;
+    overflow-x: hidden;
 }
 
 /*header*/
 header {
     margin-top: 5px;
-    height: 100px;
+    height: 10%;
     background-color: #f0e2d7;
     display: flex;
+    width: 100%;
 }
 
 /*字型----------------------*/
@@ -32,10 +34,15 @@ header {
         url('../font/MiConv.com__DFBnagBang-W5-WIN-BF-01.eot') format("embedded-opentype");
 }
 
+.indexa{
+    width: 20%;
+}
+
 .r-header-titlebox {
-    width: 250px;
+    margin-top: 1%;
+    width: 90%;
     overflow: hidden;
-    margin-left: 40px;
+    margin-left: 7%;
 }
 
 .r-header-title {
@@ -49,10 +56,11 @@ header {
 
 .r-header-title2 {
     position: absolute;
-    top: 35px;
-    left: 58px;
-    width: 250px;
+    top: 38px;
+    left: 38px;
+    width: 16%;
     opacity: 0;
+    border-radius: 20px;
 }
 
 .r-header-titlebox:hover>.r-header-title2 {
@@ -69,15 +77,20 @@ header {
 
 /*選單*/
 .r-header-nav {
-    width: 900px;
-    margin: 10px;
+    width: 60%;
     display: flex;
-    margin-left: 180px;
+    padding-left: 1%;
+}
+
+.nava{
+    width: 15%;
+    margin: 3%;
 }
 
 .r-h-n-text-content {
+    width: 100%;
     font-size: 24px;
-    margin: 33px;
+    margin-top: 14%;
     transform: scale(1, 1.05);
 }
 
@@ -89,19 +102,15 @@ header {
     background-color: #63a5a5;
     padding-top: 3px;
     transform: scale(1, 1.05);
+    cursor: pointer;
 }
 
 /*搜尋*/
 .r-header-search {
     height: 40px;
     width: 200px;
-    margin-top: 55px;
-    margin-left: 60px;
-    position: absolute;
-    left: 1320px;
-    z-index: 1;
+    margin-top: 16%;
     display: flex;
-    transform: translate(-50%, -50%);
 }
 
 .r-header-search>.searchtext {
@@ -126,21 +135,21 @@ header {
 
 /*購物車跟會員*/
 .r-header-smallpic {
-    width: 180px;
+    width: 14%;
     overflow: hidden;
     display: flex;
-    margin-left: 70px;
     cursor: pointer;
-    position: absolute;
-    left: 1430px;
-    z-index: 1;
+}
+
+.carta{
+    width: 100%;
+    margin-top: 9%;
 }
 
 .r-h-smallpic-memcart {
-    width: 40px;
+    width: 45%;
     height: 40px;
-    margin: 33px 0px;
-    margin-right: 20px;
+    margin: 16% 5%;
 }
 
 .r-h-smallpic-memcart>img {
@@ -164,21 +173,19 @@ header {
 }
 
 .footer-contactus {
-    width: 250px;
+    width: 30%;
     margin: 7px 20px
 }
 
 .footer-count {
-    width: 500px;
-    margin: 5px;
-    margin-left: 510px;
-    margin-right: 300px;
+    width: 100%;
+    margin-left: 10%;
     text-align: center;
 }
 
 .footer-our {
-    width: 400px;
-    margin: 7px 20px;
+    width: 50%;
+    margin: 7px 0px;
 }
 
 .footer-our>p {
@@ -190,37 +197,31 @@ header {
     background-image: url(../img/car.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1600px;
+    width: 1390px;
     height: auto;
-    margin: 0 0 30px 110px;
-    padding: 50px 0 50px 50px;
+    margin: 0 0 2% 1%;
+    padding: 2% 0 2% 1%;
     display: block;
 }
 
 .car-sbox {
     background-color: rgba(122, 122, 122, 0.664);
-    width: 1500px;
+    width: 1350px;
     height: auto;
     border-radius: 10px;
     display: block;
-    padding: 50px 0 50px 50px;
+    padding: 2% 0 2% 2%;
 }
 
 .car-sbox-1 {
     background-color: rgba(255, 255, 255, 0.904);
-    width: 1300px;
+    width: 1200px;
     height: 300px;
     border-radius: 10px;
     display: flex;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin-left: 3.5%;
+    margin-bottom: 3.5%;
 }
-
-.car-sbox-1:hover {
-    transform: scale(1.07);
-    transition: 0.5s;
-}
-
 .car-sbox-1ph {
     width: 250px;
     height: 250px;
@@ -235,7 +236,7 @@ header {
 
 .car-sbox-1ind {
     background-color: rgba(95, 161, 144, 0.555);
-    width: 950px;
+    width: 830px;
     height: 250px;
     border-radius: 10px;
     margin: 25px 0 0 50px;
@@ -428,13 +429,17 @@ header {
     background-color: #f3ededc5;
     width: 400px;
     height: 60px;
-    position: absolute;
-    margin: 22px 0 0 535px;
+    margin: 2% 0 0 50%;
     padding-bottom: 0px;
     padding-right: 10px;
     padding-top: 15px;
     border-radius: 10px;
 }
+.car-sbox-1:hover {
+    transform: scale(1.07);
+    transition: 0.5s;
+}
+
 
 .car-sbox-1total>h2 {
     float: right;
@@ -449,8 +454,8 @@ header {
     width: 150px;
     height: 50px;
     float: right;
-    margin-right: 45px;
-    margin-top: -10px;
+    margin-right: 5%;
+    margin-top: -2%;
     font-size: 30px;
     border-radius: 10px;
 
@@ -468,9 +473,9 @@ header {
     height: 150px;
     border-radius: 10px;
     display: flex;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-left: 0%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .car-sbox-2-ph {
