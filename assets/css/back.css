@@ -594,6 +594,9 @@ a {
     margin: auto;
     padding-top: 30px;
 }
+.delproduct>form{
+    width: 100%;
+}
 
 .delbackbackback {
     height: 630px;
@@ -605,9 +608,9 @@ a {
 
 .delproduct {
     height: 580px;
-    width: 900px;
+    width: 650px;
     border-radius: 10px;
-    margin: 0 0 0 2%;
+    margin: 0 0 0 1%;
     /*padding-left:30px;
     padding-top: 10px;*/
 }
@@ -624,7 +627,8 @@ a {
 
 .productimg {
     height: 150px;
-    width: 150px;
+    width: 180px;
+    margin-left: -5%;
     overflow: hidden;
     border-radius: 10px;
     margin-top: 15px;
