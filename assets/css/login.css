@@ -17,8 +17,6 @@ a {
 /*登入註冊*/
 .login-form {
     position: absolute;
-    left: 365px;
-    top: 140px;
     height: 600px;
     width: 1200px;
     border-radius: 20px;
@@ -26,6 +24,8 @@ a {
     display: flex;
     overflow: hidden;
     visibility: hidden;
+    margin-top: 3%;
+    margin-left: -85%;
 }
 
 .x {
@@ -241,12 +241,12 @@ a {
 .mask {
     position: fixed;
     height: 600px;
-    width: 600px;
+    width: 40%;
     background-image: url(../img/maskback.png);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.911);
     z-index: 5;
-    left: 965px;
+    margin-left: -11%;
     border-radius: 3px;
 }
 
