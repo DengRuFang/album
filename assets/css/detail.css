@@ -354,6 +354,7 @@ header {
 
 /*四個分類*/
 .r-main-section-four {
+    width: 100%;
     height: 650px;
     margin: 50px -6.5%;
     border-radius: 20px;
@@ -363,7 +364,7 @@ header {
 /*top3左邊*/
 .r-m-section-four-three {
     height: 550px;
-    width: 800px;
+    width: 60%;
     margin-left: 200px;
     margin-top: 50px;
     border-radius: 20px;
@@ -417,7 +418,7 @@ header {
 
 /*rock*/
 .r-m-s-f-three-two-rock {
-    width: 400px;
+    width: 50%;
     border-radius: 20px;
     margin: 15px 15px 0px 0px;
     background-image: url(../img/rock.jpg);
@@ -427,7 +428,7 @@ header {
 
 /*傷感*/
 .r-m-s-f-three-two-sad {
-    width: 400px;
+    width: 50%;
     border-radius: 20px;
     margin: 15px 0px 0px 15px;
     background-image: url(../img/sad.jpg);
@@ -438,7 +439,7 @@ header {
 /*top3*/
 .r-m-section-four-top3 {
     height: 550px;
-    width: 400px;
+    width: 30%;
     border-radius: 20px;
     margin: 50px 0 0px 100px;
     background-image: url(../img/top3.jpg);
@@ -741,17 +742,17 @@ header {
     height: 150px;
     width: 150px;
     overflow: hidden;
-    margin-left: 20px;
+    margin-left: 2;
     margin-right: 20px;
 }
 
 .r-m-market-title-text {
     font-size: 70px;
-    width: 300px;
+    width: 20%;
     margin: auto;
     position: relative;
     top: 5px;
-    left: -480px;
+    left: -28%;
     text-align: center;
     border-radius: 20px;
     background-color: rgb(236, 235, 232);
@@ -761,7 +762,7 @@ header {
     font-size: 70px;
     text-align: center;
     margin: auto;
-    margin-left: 590px;
+    margin-left: 35%;
     padding-top: 25px;
     z-index: 1;
 }
@@ -772,7 +773,7 @@ header {
 
 .r-m-market1-contentbox {
     height: 700px;
-    margin: 30px 250px;
+    margin: 20px 250px;
     border-radius: 20px;
     /*background-color: #ffed9f;*/
     background-image: url(../img/space.jpg);
@@ -780,28 +781,33 @@ header {
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 2%;
 }
 
 .r-m-m1-contentbox-box {
     height: 325px;
     margin-top: 20px;
-    margin: 2% -4.5%;
+    margin: 1% -4.5%;
     display: flex;
+    padding: 2% 5%;
+}
+
+.r-m-m1-contentbox-box-CD{
+    margin:1% 3%;
+    padding: 1% 0%;
 }
 
 .r-m-m1-contentbox-box-CD,
 .r-m-m1-contentbox-box-CDdown1,
 .r-m-m1-contentbox-box-CDdown2 {
     height: 300px;
-    width: 300px;
+    width: 28%;
     border-radius: 10px;
-    margin: 10px 70px;
     background-color: #ada2a570;
-    padding: 10px;
 }
 
 .r-m-m1-cbox-box-CD-box {
-    width: 300px;
+    width: 200px;
     height: 300px;
     border-radius: 20px;
 }
@@ -822,8 +828,8 @@ header {
 
 .r-m-m1-cbox-box-CD-box-text {
     font-size: 26px;
-    width: 286px;
-    margin: 15px 5px;
+    width: 83%;
+    margin: 15px 9%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.473);
     border-radius: 10px;
@@ -832,11 +838,13 @@ header {
 
 
 .r-m-m1-contentbox-box-CDdown1 {
-    margin: 10px 235px;
+    margin: -2% 10%;
+    padding: 1% 0%;
 }
 
 .r-m-m1-contentbox-box-CDdown2 {
-    margin: 10px 80px;
+    margin: -2% 80px;
+    padding: 1% 0%;
 }
 
 .r-m-m1-cbox-box-CD-box-img:hover>.front {
@@ -862,6 +870,7 @@ header {
 
 /*footer*/
 .footer {
+    margin-top: 6%;
     height: 100px;
     background-color: #f0e2d7;
     display: flex;
